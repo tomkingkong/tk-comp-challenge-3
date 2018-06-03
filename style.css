@@ -1,8 +1,9 @@
 /* CONTAINS EVERYTHING */
 
 body {
-  background-color: red;
+  /* background-color: red; */
 }
+
 .container {
   align-content: flex-start;
   color: rgb(115, 123, 136);
@@ -11,6 +12,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   height: 100%;
   width: 100vw;
+  transition: all 0.10s linear;
 }
 
 ::placeholder {
@@ -18,20 +20,14 @@ body {
 }
 
 button:hover {
-  filter: brightness(60%);
+  filter: brightness(80%);
 }
-
-/* REVEAL SIDEBAR BUTTON */
-/* .show-side-bar {
-  order: 1;
-  position: absolute;
-} */
 
 /* LEFT SIDE BAR */
 
 .side-bar {
   background-color: #364051;
-  display: flex;
+  display: none;
   flex-flow: column;
   min-width: 10rem;
   width: 10rem;
@@ -70,11 +66,14 @@ h5 {
 }
 
 /* Profile */
+
 .profile-photo {
   margin: 1rem auto;
   text-align: center;
 }
+
 /* photo */
+
 .profile-photo aside {
   background: url(images/ezgif.com-crop.jpg) no-repeat 20% 0%/140%;
   border-radius: 50%;
@@ -89,74 +88,96 @@ h5 {
   padding: 0;
   background: url(images/chevron-arrow-down.svg) no-repeat 100% 50%/10%;
 }
+
 .profile-photo button:hover {
   background: url(images/chevron-arrow-down-white.svg) no-repeat 100% 50%/10%;
   border: 0;
 }
 
 /* Button Icons */
+
 .home {
   background: url(images/015-house.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .home:hover {
   background: url(images/015-house-white.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .jobs {
   background: url(images/012-briefcase.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .jobs:hover {
   background: url(images/012-briefcase-white.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .resumes {
   background: url(images/016-list.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .resumes:hover {
   background: url(images/016-list-white.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .tasks {
   background: url(images/014-task.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .tasks:hover {
   background: url(images/014-task-white.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .calendar {
   background: url(images/006-calendar.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .calendar:hover {
   background: url(images/006-calendar-white.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .users {
   background: url(images/multiple-users-silhouette.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .users:hover {
   background: url(images/multiple-users-silhouette-white.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .locations {
   background: url(images/025-placeholder.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .locations:hover {
   background: url(images/025-placeholder-white.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .workflows {
   background: url(images/007-shuffle.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .workflows:hover {
   background: url(images/007-shuffle-white.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .job-boards {
   background: url(images/005-panel.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .job-boards:hover {
   background: url(images/005-panel-white.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .social {
   background: url(images/004-internet.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
+
 .social:hover {
   background: url(images/004-internet-white.svg) no-repeat 0.8rem 0.6rem/1rem;
 }
 
 /* ADMIN CHECKBOX BUTTONS */
+
 .check-container {
   display: block;
   position: relative;
@@ -168,44 +189,54 @@ h5 {
   user-select: none;
   text-indent: 1.3rem;
 }
+
 .check-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
+
 .checkmark {
   position: absolute;
   left: 0;
   height: 0.7rem;
   width: 0.7rem;
 }
+
 .yellow {
   background-color: #f2e70c;
 }
+
 .blue {
   background-color: #29b0fa;
 }
+
 .red {
   background-color: #ee145e;
 }
+
 .green {
   background-color: #00af8b;
 }
 
-.check-container:hover input ~ .checkmark {
+.check-container:hover input~.checkmark {
   filter: brightness(50%);
 }
-.check-container input:checked ~ .checkmark {
+
+.check-container input:checked~.checkmark {
   filter: brightness(130%);
 }
+
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-.check-container input:checked ~ .checkmark:after {
+
+.check-container input:checked~.checkmark:after {
   display: block;
 }
+
 .check-container .checkmark:after {
   left: 0.2rem;
   top: 0.062rem;
@@ -236,7 +267,7 @@ h5 {
   background-color: #fff;
   display: flex;
   flex-flow: column;
-  min-height: 13.05rem;
+  min-height: 13rem;
   height: auto;
   width: 100%;
 }
@@ -251,6 +282,7 @@ h5 {
 }
 
 /* all nav buttons in header */
+
 .header-nav button {
   border-left: 0.09rem solid rgba(137, 140, 148, 0.235);
   cursor: pointer;
@@ -260,50 +292,61 @@ h5 {
   min-width: 4rem;
   width: 4rem;
 }
-.header-nav button:hover{
+
+.header-nav button:hover {
   filter: brightness(100%);
   background-color: #129AF9;
 }
 
 /* Burger Nav Button */
+
 .side-bar-burger {
   background: url(images/026-menu-1.svg) no-repeat center/1rem;
   border-left: 0;
   border-right: 0.09rem solid rgba(137, 140, 148, 0.235);
 }
+
 .side-bar-burger:hover {
   background: url(images/026-menu-1-white.svg) no-repeat center/1rem;
 }
+
 .header-nav .left-arrow {
   height: 1.5rem;
   width: 0.8rem;
 }
 
 /* Profile Button */
+
 .profile-btn {
   background: url(images/018-user.svg) no-repeat center/1.2rem;
 }
+
 .profile-btn:hover {
   background: url(images/018-user-white.svg) no-repeat center/1.2rem;
 }
 
 /* Calendar Button */
+
 .calendar-btn {
   background: url(images/006-calendar.svg) no-repeat center/1rem;
 }
+
 .calendar-btn:hover {
   background: url(images/006-calendar-white.svg) no-repeat center/1rem;
 }
 
 /* Show All Button */
+
 .show-all-btn {
   background: url(images/023-menu.svg) no-repeat center/1rem;
 }
+
 .show-all-btn:hover {
   background: url(images/023-menu-white.svg) no-repeat center/1rem;
 }
 
 /* search bar */
+
 .search-bar {
   background: #fff url(images/009-search.svg) no-repeat;
   border: 0;
@@ -311,15 +354,15 @@ h5 {
   flex: 1 0;
   margin: 0 1rem 1rem 1rem;
   outline: 0;
-  min-width: 10rem;
+  min-width: 2rem;
   width: 100%;
   text-indent: 1.6rem;
 }
+
 label#search:hover {
   cursor: initial;
   background-color: #fff;
 }
-
 
 /* HEADER TITLE */
 
@@ -327,7 +370,7 @@ label#search:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1.8rem;
 }
 
 .header-title p {
@@ -340,15 +383,15 @@ label#search:hover {
   text-decoration: none;
 }
 
-
 /* HEADER TITLE - NAV TOOLS */
 
 .tools-nav {
   align-items: center;
   display: flex;
-  margin: 1rem 0.5rem;
+  margin: 1rem 0.5rem 1rem 0;
   width: auto;
 }
+
 .tools-nav button {
   border: 0.09rem solid rgba(137, 140, 148, 0.235);
   border-radius: 5rem;
@@ -356,6 +399,7 @@ label#search:hover {
   height: 2rem;
   width: 2rem;
 }
+
 .tools-nav button svg {
   fill: #898C94;
   height: 0.8rem;
@@ -363,6 +407,7 @@ label#search:hover {
 }
 
 /* open button */
+
 .tools-nav button:first-of-type {
   align-items: center;
   display: flex;
@@ -370,30 +415,29 @@ label#search:hover {
   padding: 0 0.4rem;
   width: 5rem;
 }
+
 .tools-nav button div {
   background-color: #7BBB31;
   border-radius: 50%;
-  border:  0.09rem solid rgba(137, 140, 148, 0.235);
+  border: 0.09rem solid rgba(137, 140, 148, 0.235);
   height: 0.8rem;
   width: 0.8rem;
 }
-
 
 /* MAIN CONTENT NAV TABS */
 
 .header-tabs {
   align-self: flex-start;
-  display: flex;
+  display: none;
   justify-content: space-between;
+  margin-left: 1rem;
   position: relative;
-  width: 80%;
-} 
-
-.header-nav ul {
-  position: absolute;
+  max-width: 75%;
+  width: 100%;
 }
 
 .header-tabs li {
+  border-bottom: 0.2rem solid transparent;
   cursor: pointer;
   font-size: 0.7rem;
   margin: 1rem 0 0 0.3rem;
@@ -406,14 +450,15 @@ label#search:hover {
 
 .header-tabs li:hover {
   border-bottom: 0.2rem solid cornflowerblue;
+  filter: brightness(110%);
 }
 
 /* MAIN CONTENT BODY */
 
-.page-body{
+.page-body {
   align-content: flex-start;
   background-color: #EAF0F5;
-  border-top:  0.09rem solid rgba(137, 140, 148, 0.235);
+  border-top: 0.09rem solid rgba(137, 140, 148, 0.235);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -422,6 +467,7 @@ label#search:hover {
 }
 
 /* SHOW DATA GRAPHS BUTTON */
+
 .show-more {
   align-items: center;
   display: flex;
@@ -431,8 +477,9 @@ label#search:hover {
   padding: 0 2rem;
   width: 100%;
 }
+
 .show-more button {
-  border:  0.09rem solid rgba(137, 140, 148, 0.235);
+  border: 0.09rem solid rgba(137, 140, 148, 0.235);
   border-radius: 50%;
   margin: 0 0.2rem;
   height: 1.5rem;
@@ -440,26 +487,32 @@ label#search:hover {
 }
 
 /* REMOVE DATA GRAPH */
+
 .show-more-data {
   background: rgb(250, 249, 247) url(images/chevron-arrow-up.png) no-repeat 50% 50%/40% 40%;
 }
-.show-more:active ~ .data-graphic {
+
+.show-more:active~.data-graphic {
   display: none;
 }
+
 .show-more-data:active {
   background: rgb(250, 249, 247) url(images/chevron-arrow-down.png) no-repeat 50% 50%/40% 40%;
 }
+
 hr {
-  background-color:#b9bfc4;
+  background-color: #b9bfc4;
   border: 0;
   height: 0.064rem;
   width: 100%;
-
 }
 
 /* DATA GRAPHS */
-/* main container */
+
+/* Graphs Container */
+
 .data-graphic {
+  align-items: flex-end;
   display: none;
   flex-wrap: wrap;
   justify-content: center;
@@ -468,25 +521,189 @@ hr {
   width: 100%;
 }
 
-/* Graph containers */
+/* Individual Graph containers */
+
 .data-graphic aside {
-  align-items: center;
-  background-color: white;
+  align-items: center; 
+  /* background-color: white; */
   display: flex;
   flex-flow: column;
-  width: 20rem;
-  margin: 1rem 2rem;
+  margin: 1rem 2rem 2rem 2rem;
+  /* position: relative; */
+  /* min-width: 10rem; */
+  /* max-width: 50%; */
+  /* min-width: 50%; */
 }
 
-/* Graph div */
-.data-graphic div {
-  height: 20rem;
+/* Pie Graphs */
+
+.pie-graph {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* max-width: 20rem; */
+  width: 100%;
+}
+
+.pie-graph-btn {
+  margin: 3rem 0 0 0;
+}
+
+.pie-graph div {
+  align-items: center;
+  background-color: #8f9aad64;
+  border-radius: 50%;
+  display: flex;
+  height: 7.8rem;
+  justify-content: center;
+  margin: 0.5rem;
+  width: 7.8rem;
+  transition: all 0.25s linear;
+}
+
+.pie-graph section {
+  align-items: center;
+  background-color: #EAF0F5;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 7rem;
+  justify-content: center;
+  text-align: center;
+  width: 7rem;
+}
+
+.pie-graph h4 {
+  color: #2f384a;
+  font-size: 1.8rem;
+  margin: 0 0 0.2rem 0;
+}
+
+.pie-graph p {
+  font-size: 0.5rem;
+  font-weight: 700;
+}
+
+/* Bar Graph */
+
+.bar-graph {
+  display: flex;
+  flex-flow: row;
+  font-size: 0.6rem;
+  justify-content: center;
+  text-align: right;
+  position: relative;
+  min-width: 10rem;
+  width: 100%;
+}
+
+/* Bar Graph Columns */
+
+.bar-graph div {
+  background-color: #b9bfc43f;
+  border-radius: 0.1rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  height: 10rem;
+  margin: 0 0 0.5rem 0.8rem;
+  min-width: 1rem;
+  transition: all 0.15s linear;
+}
+
+.bar-graph div:hover {
+  filter: brightness(85%);
+}
+
+/* Bar Graph Column Fill */
+
+.bar-graph section {
+  background-color: #45b9c1;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+/* Bar Graph Amounts */
+
+.num-vertical {
+  background-color: transparent !important;
+  color: #2f384a;
+  justify-content: space-between !important;
+  margin: 0 !important;
+}
+
+/* Bar Graph Days */
+
+.day-horizontal {
+  background-color: transparent;
+  color: #2f384a;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row;
+  height: 1rem;
+  margin: 0 0 1rem 1.7rem;
+}
+
+.day-horizontal p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 0.635rem;
+}
+
+/* Bar Graph Levels */
+
+.col1 {
+  height: 10%;
+}
+.col2 {
+  height: 50%;
+}
+.col3 {
+  height: 60%;
+}
+.col4 {
+  height: 75%;
+}
+.col5 {
+  height: 40%;
+}
+.col6 {
+  height: 50%;
+}
+.col7 {
+  height: 30%;
+}
+.col8 {
+  height: 10%;
+}
+.col9 {
+  height: 75%;
+}
+.col10 {
+  height: 85%;
+}
+.col11 {
+  height: 60%;
+}
+.col12 {
+  height: 40%;
+}
+.col13 {
+  height: 30%;
+}
+.col14 {
+  height: 20%;
 }
 
 /* graph buttons */
+
 .data-graphic button {
   background-color: #FAF9F7;
-  border:  0.09rem solid rgba(137, 140, 148, 0.235);
+  border: 0.09rem solid rgba(137, 140, 148, 0.235);
   border-radius: 2rem;
   font-size: 0.6rem;
   height: 1.5rem;
@@ -502,19 +719,21 @@ hr {
   justify-content: center;
   margin: 0 auto;
   order: 3;
-  width: auto;
+  width: 100%;
 }
 
 /* !ARTICLE INFORMATION! */
+
 .main-summary {
   background-color: #FAF9F7;
   box-shadow: 0 2px 3px rgb(208, 213, 218);
   border-radius: 0.2rem;
   flex: 1;
-  margin: 2rem;
-  max-height: 40.5rem;
-  max-width: 50rem;
-  min-width: 30rem;
+  /* margin: 0.5rem 2rem 2rem 2rem; */
+  max-height: 50rem;
+  /* max-width: 50rem; */
+  width: 100%;
+  min-width: 50%;
   order: 2;
   padding: 0 2rem 2rem 2rem;
   position: relative;
@@ -533,6 +752,7 @@ hr {
 }
 
 /* Job Key/Values */
+
 .main-summary section {
   align-items: flex-start;
   display: flex;
@@ -542,16 +762,21 @@ hr {
 }
 
 /* job headers */
+
 .main-summary h3 {
   min-width: 9rem;
 }
 
 /* job info */
+
 .main-summary p {
   font-size: 0.8rem;
+  max-height: 5rem;
+  overflow-y: scroll;
 }
 
 /* job description header */
+
 .sum-header h3 {
   color: #fff;
   margin: 0.4rem 0;
@@ -559,7 +784,8 @@ hr {
 }
 
 /* JOB EDIT BUTTON */
-.sum-header button {
+
+.sum-header .edit-btn {
   background: #7c8ca6 url(images/017-feather-and-ink-bottle-white.svg) no-repeat 13% 40%/20%;
   border-radius: 0.2rem;
   color: #fff;
@@ -571,6 +797,18 @@ hr {
   z-index: 2;
 }
 
+/* SHARE BUTTON */
+.share-btn {
+  background: #7c8ca6 url(images/024-share-white.svg) no-repeat 13% 40%/20%;
+  border-radius: 0.2rem;
+  color: #fff;
+  display: flex;
+  height: 1.5rem;
+  margin: auto 0;
+  text-indent: 1.5rem;
+  width: 4rem;
+  z-index: 2;
+}
 /* HIRING LEAD PICTURE */
 
 .sum-hiring-lead aside {
@@ -583,17 +821,21 @@ hr {
 
 /* FOOTER */
 
-.page-footer {
+.page-footer-container {
   display: flex;
   flex-flow: column;
   flex: 0.5;
   height: auto;
-  margin: 2rem;
+  margin: 0.5rem 2rem 2rem 2rem;
   order: 3;
-  /* padding: 1rem 0; */
+}
+
+.page-footer-container button {
+  color: #fff;
 }
 
 /* MEDIA BUTTONS */
+
 .media-btns {
   display: flex;
   flex-flow: column;
@@ -603,45 +845,52 @@ hr {
   max-width: 20rem;
   min-width: 20rem;
 }
+
 .media-btns button {
-  color: #fff;
   border-radius: 0.1rem;
   height: 2.8rem;
   width: 100%;
 }
 
 /* Facebook */
+
 .facebook {
   background: #475993 url(images/facebook-logo.svg) no-repeat 0.8rem 1rem/1rem;
 }
 
 /* Twitter */
+
 .twitter {
   background: #49A9E9 url(images/013-twitter.svg) no-repeat 0.8rem 1rem/1rem;
 }
+
 /* LinkedIn */
+
 .linkedin {
   background: #3680B7 url(images/010-linkedin.svg) no-repeat 0.8rem 1rem/1rem;
 }
 
 /* JOB INPUTS */
 
-.page-footer aside {
-  border-bottom:  0.09rem solid rgba(137, 140, 148, 0.235);
+.page-footer-container aside {
+  border-bottom: 0.09rem solid rgba(137, 140, 148, 0.235);
   max-width: 20rem;
   min-width: 20rem;
   padding: 1.4rem 0;
 }
 
+/* icons for link to, use widget, upload resume */
 .r-aside img {
   width: 0.9rem;
 }
 
+/* body text for link to, use widget, upload resume */
 .r-aside p {
   font-size: 0.8rem;
   margin: 1rem 0;
 }
 
+/* input style for link to, use widget, upload reusme */
 .r-aside input {
   border: 0;
   font-size: 0.8rem;
@@ -649,25 +898,28 @@ hr {
   text-indent: 0.4rem;
   width: 80%;
 }
+
+/* button style for link to, use widget, upload reusme */
+.r-aside button {
+  background-color: #3db4be;
+  height: 2rem;
+  width: 3rem;
+}
+
 .upload-resume input {
   width: 100%;
 }
 
-.r-aside button {
-  background-color: #3db4be;
-  color: #fff;
-  height: 2rem;
-  width: 20%;
-}
-
 /** DATA-GRAPHIC DROPDOWN **/
-.test-button {
+/* contains the graphic content and checkbox input */
+.drop-down-graph-container {
   display: flex;
   flex-flow: column nowrap;
   margin: 1rem 0;
   width: 100%;
 }
 
+/* label containing the content, input, and replacement checkbox styling*/
 .show-more-container {
   cursor: pointer;
   display: flex;
@@ -682,13 +934,15 @@ hr {
   width: 100%;
 }
 
+/* hidden original input */
 .show-more-container input {
   position: relative;
   opacity: 0;
 }
 
+/* new checkbox style */
 .show-more-checkmark {
-  background: #fff url(images/chevron-arrow-down.png) no-repeat 49.5% 55%/43% 43%;
+  background: #fff url(images/chevron-arrow-down.png) no-repeat 49% 48%/43% 43%;
   border-radius: 50%;
   display: flex;
   height: 1.2rem;
@@ -696,7 +950,13 @@ hr {
   width: 1.2rem;
   z-index: 5;
 }
+.show-more-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
 
+/* horizontal rule */
 .line {
   border-bottom: 0.06rem solid #8f9aad;
   margin: 0.6rem auto;
@@ -706,44 +966,64 @@ hr {
   z-index: 4;
 }
 
-.show-more-checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.show-more-container input:checked ~ .data-graphic {
-  display: flex;
+.show-more-container input:hover ~ .show-more-checkmark {
+  filter: brightness(80%);
 }
 
 .show-more-container input:checked ~ .show-more-checkmark {
-  background: #fff url(images/chevron-arrow-up.png) no-repeat 49.8% 48%/45% 45%;
+  background: #fff url(images/chevron-arrow-up.png) no-repeat 49.5% 55%/43% 43%;
   border-radius: 50%;
   margin: 0 0 0 1.05rem;
   width: 1.2rem;
   height: 1.2rem;
 }
 
+/* display data-graphic content on checked */
+.show-more-container input:checked ~ .data-graphic {
+  display: flex;
+}
+
+/* move horzontal rule to bottom to follow checkbox button */
 .show-more-container input:checked ~ .show-more-checkmark ~ .line {
   bottom: 0;
 }
 
 @media only screen and (min-width: 400px) {
-  .container {
-
+  .share-btn {
+    display: none;
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .container {
-
+@media only screen and (min-width: 650px) {
+  .main-summary {
+    margin: 0.5rem 2rem 2rem 2rem;
   }
-
+  .header-tabs {
+    display: flex;
+  }
+  .data-graphic {
+    display: flex;
+  }
+  .show-more-checkmark {
+    background: #fff url(images/chevron-arrow-up.png) no-repeat 49.5% 55%/43% 43%;
+  }
+  .show-more-container input:checked~.data-graphic {
+    display: none;
+  }
+  .show-more-container input:checked~.show-more-checkmark {
+    background: #fff url(images/chevron-arrow-down.png) no-repeat 49% 48%/43% 43%;
+    border-radius: 50%;
+    margin: 0 0 0 1.05rem;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .line {
+    bottom: 0;
+  }
 }
 
-@media only screen and (min-width: 1000px) {
-  .container {
-
+@media only screen and (min-width: 800px) {
+  .side-bar {
+    display: flex;
   }
-
 }
