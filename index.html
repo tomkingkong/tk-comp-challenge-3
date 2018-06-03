@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Static Comp Three</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:700" rel="stylesheet">
+  </head>
+  <body>
+    <container class="container">
+      <!-- <div class="show-side-bar"></div> -->
+      <aside class="side-bar">
+          <div class="profile-photo">
+            <aside></aside>
+            <button>Thomas King</button>
+          </div>
+          <section class="l-aside main">
+            <h5>Main</h5>
+            <button class="home">HOME</button>
+            <button class="jobs">JOBS</button>
+            <button class="resumes">RESUMES</button>
+            <button class="tasks">TASKS</button>
+            <button class="calendar">CALENDAR</button>
+          </section>
+          <section class="l-aside admin">
+            <h5>Admin</h5>
+            <button class="users">USERS</button>
+            <button class="locations">LOCATIONS</button>
+            <button class="workflows">WORKFLOWS</button>
+            <button class="job-boards">JOB BOARDS</button>
+            <button class="social">SOCIAL</button>
+          </section>
+          <section class="l-aside categories">
+              <h5>Categories</h5>
+              <label class="check-container">
+                <input type="checkbox" name="category">Administrative
+                <span class="checkmark yellow"></span>
+              </label>
+              <label class="check-container">
+                <input type="checkbox" name="category">Design
+                <span class="checkmark blue"></span>
+              </label>
+              <label class="check-container">
+                <input type="checkbox" name="category">Executive
+                <span class="checkmark red"></span>
+              </label>
+              <label class="check-container">
+                <input type="checkbox" name="category">Human Resources
+                <span class="checkmark green"></span>
+              </label>
+          </section>
+      </aside>
+      <div class="page">
+        <header class="page-header">
+          <nav class="header-nav">
+            <button id="sidebar-nav" class="side-bar-burger"></button>
+            <input class="search-bar" type="search" placeholder="Search for a job, task or resume">
+            <button id="profile" class="profile-btn"></button>
+            <button id="calendar" class="calendar-btn"></button>
+            <button id="showall" class="show-all-btn"></button>
+          </nav>
+          <section class="header-title">
+            <div class="name-header">
+              <h2>Customer Service Representative</h2>
+              <p><img aria-hidden="true" src="images/025-placeholder.svg"> San Francisco, CA  &nbsp;-&nbsp;  <a href="#">Preview this post</a></p>
+            </div>
+            <nav class="tools-nav">
+              <button class="open-btn"><div></div>OPEN</button>
+              <button class="bookmark-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463.273 463.273"><path d="M313.874 0H149.398c-16.28 0-29.477 13.197-29.476 29.477v422.368c0 4.532 2.679 8.637 6.827 10.461 4.148 1.824 8.983 1.025 12.324-2.038l84.84-77.788c4.369-4.006 11.076-4.006 15.446 0l84.84 77.788c3.34 3.063 8.175 3.863 12.324 2.038s6.827-5.929 6.827-10.461h.001V29.477C343.351 13.197 330.154 0 313.874 0z"/></svg></button>
+              <button class="edit-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 393.601 393.601"><path d="M323.53 258.346c-.662-.648-1.457-1.127-2.32-1.412v-17.34c0-3.314-2.688-6-6-6h-66.156c-3.314 0-6 2.686-6 6v17.34c-.865.284-1.662.764-2.324 1.413-26.037 25.496-42.354 71.897-43.654 124.125-.039 1.617.574 3.181 1.703 4.338 1.129 1.158 2.679 1.812 4.295 1.812h158.119c1.617 0 3.166-.653 4.296-1.812 1.129-1.157 1.741-2.722 1.702-4.338-1.299-52.232-17.62-98.633-43.661-124.126zM242.726 2.401C241.13.852 239.026 0 236.804 0c-.816 0-1.629.118-2.412.35-27.947 8.274-55.127 21.821-78.604 39.176-19.158 14.163-36.469 31.014-51.453 50.087-3.49 4.442-6.854 9.011-9.967 13.53-1.795 2.477-2.117 5.744-.846 8.521.158.351.318.706.471 1.062 1.092 2.532 2.053 5.267 2.854 8.125 2.75 9.853 3.518 20.346 2.297 30.397-1.596-7.097-3.764-13.649-6.479-19.572-1.342-2.93-4.293-4.875-7.502-4.955l-.225-.003c-3.182 0-6.07 1.754-7.541 4.578-6.025 11.585-10.545 22.53-13.816 33.459-4 13.358-6.613 28.123-7.766 43.884-1.324 18.107-.521 36.425.254 54.152.104 2.371.209 4.758.309 7.16.164 3.904 2.951 7.182 6.777 7.97.564.116 1.143.175 1.717.175 3.246 0 6.254-1.893 7.672-4.844l22.014-47.166.695-1.486c1.83-3.913 3.658-7.824 5.498-11.773 12.453-26.75 26.568-57.067 43.23-85.601 11.219-19.207 24.93-40.637 42.936-57.698-10.873 21.477-20.182 43.848-29.199 65.521-.195.428-19.688 42.968-27.902 59.303l-.078.156c-5.092 10.129-10.359 20.604-15.248 30.891-17.596 37.02-97.744 151.238-87.115 167.708 5.688 8.813 77.652-103.213 77.652-103.213 5.1-2.214 9.25-4.085 13.023-5.875 25.891-12.269 45.537-26.187 60.063-42.545 8.539-9.621 16.129-20.966 24.609-36.786 5.477-10.218 10.295-20.861 14.322-31.633.885-2.369.676-4.988-.578-7.188-1.254-2.198-3.4-3.713-5.894-4.157-7.172-1.279-14.143-3.565-20.578-6.723 6.904.775 13.588.896 19.861.359 2.908-.249 5.764-.643 8.492-1.17 3.195-.618 5.789-3.051 6.611-6.2.157-.605.312-1.213.465-1.811.6-2.36 1.168-4.837 1.729-7.275l.25-1.088c3.832-16.634 6.176-39.83 8.443-62.262 2.428-24.015 4.938-48.847 9.176-64.871.785-2.962-.096-6.131-2.295-8.268z"/></svg></button>
+              <button class="trash-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 290"><path d="M265 60h-45V15c0-8.284-6.716-15-15-15H85c-8.284 0-15 6.716-15 15v45H25c-8.284 0-15 6.716-15 15s6.716 15 15 15h15v185c0 8.284 6.716 15 15 15h180c8.284 0 15-6.716 15-15V90h15c8.284 0 15-6.716 15-15s-6.716-15-15-15zM100 30h90v30h-90V30zM70 90h30v170H70V90zm60 0h30v170h-30V90zm90 170h-30V90h30v170z"/></svg></button>
+            </nav>
+          </section>
+          <ul class="header-tabs">
+            <li>SUMMARY</li>
+            <li>APPLICANTS</li>
+            <li>JOB BOARD</li>
+            <li>INTERVIEWS</li>
+            <li>ACTIVITY</li>
+            <li>BROADCAST</li>
+            <li>NOTIFICATIONS</li>
+          </ul>
+        </header>
+        <main class="page-body">
+          <div class="show-more"><hr><button class="show-more-data"></button><hr></div>
+          <section class="data-graphic">
+            <aside class="pie-graph">
+              <div></div>
+              <button>TOTALS - Out of 5,234 views</button>
+            </aside>
+            <aside class="bar-graph">
+              <div></div>
+              <button>APLICANTS/DAY</button>
+            </aside>
+          </section>
+          <div class="bottom-half-page">
+            <article class="main-summary">
+              <div></div>
+              <section class="sum-header"><h3>JOB DESCRIPTION</h3><button aria-label="edit"> EDIT</button></section>
+              <section class="sum-title"><h3>POSITION TITLE</h3><p>Customer Service Representative</p></section>
+              <hr>
+              <section class="sum-loc"><h3>LOCATION</h3><p>San Francisco, CA</p></section>
+              <hr>
+              <section class="sum-type"><h3>EMPLOYMENT TYPE</h3><p>Full-time</p></section>
+              <hr>
+              <section class="sum-exp"><h3>EXPERIENCE</h3><p>Mid-level</p></section>
+              <hr>
+              <section class="sum-status"><h3>STATUS</h3><p>Open</p></section>
+              <hr>
+              <section class="sum-description"><h3>DESCRIPTION</h3><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p></section>
+              <hr>
+              <section class="sum-hiring-lead"><h3>HIRING LEAD</h3><aside></aside><p>Tom King</p></section>
+              <hr>
+              <section class="sum-salary"><h3>APPROVED SALARY</h3><p>$One Billion</p></section>
+            </article>
+            <footer class="page-footer">
+                <div class="media-btns">
+                  <button class="facebook" aria-label="post to facebook">Post to Facebook</button>
+                  <button class="twitter" aria-label="tweet this job">Tweet this Job</button>
+                  <button class="linkedin" aria-label="post to linked in">Post to LinkedIn</button>
+                </div>
+                <aside class="r-aside link-job">
+                  <h4><img aria-hidden="true" src="images/003-earth-with-continents.svg"> &nbsp;Link to this Job</h4>
+                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                  <input class="copy" type="text" name="copy-link" placeholder="http://this-job-posting/.."><button class="copy-link-btn">Copy</button>
+                </aside>
+                <aside class="r-aside use-btn">
+                    <h4><img aria-hidden="true" src="images/008-camera.svg"> &nbsp;Use the Button Widget</h4>
+                    <p>This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
+                    <input class="copy" type="text" name="copy-link" placeholder='<script type="text/java..'><button class="copy-link-btn">Copy</button>
+                </aside>
+                <aside class="r-aside upload-resume">
+                    <h4><img aria-hidden="true" src="images/002-paper-plane.svg"> &nbsp;Upload Resumes by Email</h4>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. And some other words here.</p>
+                    <input class="upload" type="text" name="upload-resume" placeholder="tomtizzy@gmail.com">
+                </aside>
+            </footer>
+          </div>
+        </main>
+      </div>           
+    </container>
+    <div class="test-button">
+      <label class="show-more-container">
+        <input type="checkbox" name="category" class="check">
+        <section class="data-graphic testgraphic">
+            <aside class="pie-graph">
+              <div></div>
+              <button>TOTALS - Out of 5,234 views</button>
+            </aside>
+            <aside class="bar-graph">
+              <div></div>
+              <button>APLICANTS/DAY</button>
+            </aside>
+        </section> 
+        <div class="show-more-button-container"><hr><span class="show-more-checkmark"></span><hr></div>
+      </label>
+    </div>
+  </body>
+</html>

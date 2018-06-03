@@ -1,0 +1,770 @@
+/* CONTAINS EVERYTHING */
+
+body {
+  background-color: red;
+}
+.container {
+  align-content: flex-start;
+  color: rgb(115, 123, 136);
+  display: flex;
+  flex-flow: row;
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100vw;
+}
+
+::placeholder {
+  color: #b9bfc4;
+}
+
+button:hover {
+  filter: brightness(60%);
+}
+
+/* REVEAL SIDEBAR BUTTON */
+/* .show-side-bar {
+  order: 1;
+  position: absolute;
+} */
+
+/* LEFT SIDE BAR */
+
+.side-bar {
+  background-color: #364051;
+  display: flex;
+  flex-flow: column;
+  min-width: 10rem;
+  width: 10rem;
+}
+
+.side-bar button {
+  color: #8f9aad;
+  font-size: 0.7rem;
+  padding: 0.8rem 0.5rem;
+  text-align: left;
+  text-indent: 2rem;
+  width: 100%;
+}
+
+.side-bar button:hover {
+  filter: brightness(105%);
+  background-color: #2F3848;
+  border-left: 0.05rem solid #29b0fa;
+  color: #fff;
+}
+
+/* Side Bar SECTIONS */
+
+.l-aside {
+  color: #8f9aad;
+  border-top: 0.2rem ridge #2f384a;
+  font-size: 0.7rem;
+  height: auto;
+  padding: 1rem 0;
+  position: relative;
+}
+
+h5 {
+  font-size: 0.5rem;
+  margin: 0.5rem 0.8rem;
+}
+
+/* Profile */
+.profile-photo {
+  margin: 1rem auto;
+  text-align: center;
+}
+/* photo */
+.profile-photo aside {
+  background: url(images/ezgif.com-crop.jpg) no-repeat 20% 0%/140%;
+  border-radius: 50%;
+  margin: 0.5rem auto;
+  height: 5rem;
+  width: 5rem;
+}
+
+.profile-photo button {
+  margin: 0 auto;
+  text-indent: 0;
+  padding: 0;
+  background: url(images/chevron-arrow-down.svg) no-repeat 100% 50%/10%;
+}
+.profile-photo button:hover {
+  background: url(images/chevron-arrow-down-white.svg) no-repeat 100% 50%/10%;
+  border: 0;
+}
+
+/* Button Icons */
+.home {
+  background: url(images/015-house.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.home:hover {
+  background: url(images/015-house-white.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.jobs {
+  background: url(images/012-briefcase.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.jobs:hover {
+  background: url(images/012-briefcase-white.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.resumes {
+  background: url(images/016-list.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.resumes:hover {
+  background: url(images/016-list-white.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.tasks {
+  background: url(images/014-task.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.tasks:hover {
+  background: url(images/014-task-white.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.calendar {
+  background: url(images/006-calendar.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.calendar:hover {
+  background: url(images/006-calendar-white.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.users {
+  background: url(images/multiple-users-silhouette.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.users:hover {
+  background: url(images/multiple-users-silhouette-white.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.locations {
+  background: url(images/025-placeholder.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.locations:hover {
+  background: url(images/025-placeholder-white.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.workflows {
+  background: url(images/007-shuffle.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.workflows:hover {
+  background: url(images/007-shuffle-white.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.job-boards {
+  background: url(images/005-panel.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.job-boards:hover {
+  background: url(images/005-panel-white.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.social {
+  background: url(images/004-internet.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+.social:hover {
+  background: url(images/004-internet-white.svg) no-repeat 0.8rem 0.6rem/1rem;
+}
+
+/* ADMIN CHECKBOX BUTTONS */
+.check-container {
+  display: block;
+  position: relative;
+  margin: 1rem 0 0 0.8rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-indent: 1.3rem;
+}
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  left: 0;
+  height: 0.7rem;
+  width: 0.7rem;
+}
+.yellow {
+  background-color: #f2e70c;
+}
+.blue {
+  background-color: #29b0fa;
+}
+.red {
+  background-color: #ee145e;
+}
+.green {
+  background-color: #00af8b;
+}
+
+.check-container:hover input ~ .checkmark {
+  filter: brightness(50%);
+}
+.check-container input:checked ~ .checkmark {
+  filter: brightness(130%);
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.check-container .checkmark:after {
+  left: 0.2rem;
+  top: 0.062rem;
+  width: 0.3rem;
+  height: 0.5rem;
+  border: solid #364051;
+  border-width: 0 0.1rem 0.1rem 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* MAIN PAGE CONTENT */
+
+.page {
+  align-content: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  min-width: 80%;
+  width: 100%;
+}
+
+/* HEADER / NAV / TITLE */
+
+.page-header {
+  align-self: flex-end;
+  background-color: #fff;
+  display: flex;
+  flex-flow: column;
+  min-height: 13.05rem;
+  height: auto;
+  width: 100%;
+}
+
+/* HEADER NAVIGATION */
+
+.header-nav {
+  align-items: flex-end;
+  border-bottom: 0.09rem solid rgba(137, 140, 148, 0.235);
+  display: flex;
+  width: 100%;
+}
+
+/* all nav buttons in header */
+.header-nav button {
+  border-left: 0.09rem solid rgba(137, 140, 148, 0.235);
+  cursor: pointer;
+  flex: 0 1;
+  min-height: 4rem;
+  height: 4rem;
+  min-width: 4rem;
+  width: 4rem;
+}
+.header-nav button:hover{
+  filter: brightness(100%);
+  background-color: #129AF9;
+}
+
+/* Burger Nav Button */
+.side-bar-burger {
+  background: url(images/026-menu-1.svg) no-repeat center/1rem;
+  border-left: 0;
+  border-right: 0.09rem solid rgba(137, 140, 148, 0.235);
+}
+.side-bar-burger:hover {
+  background: url(images/026-menu-1-white.svg) no-repeat center/1rem;
+}
+.header-nav .left-arrow {
+  height: 1.5rem;
+  width: 0.8rem;
+}
+
+/* Profile Button */
+.profile-btn {
+  background: url(images/018-user.svg) no-repeat center/1.2rem;
+}
+.profile-btn:hover {
+  background: url(images/018-user-white.svg) no-repeat center/1.2rem;
+}
+
+/* Calendar Button */
+.calendar-btn {
+  background: url(images/006-calendar.svg) no-repeat center/1rem;
+}
+.calendar-btn:hover {
+  background: url(images/006-calendar-white.svg) no-repeat center/1rem;
+}
+
+/* Show All Button */
+.show-all-btn {
+  background: url(images/023-menu.svg) no-repeat center/1rem;
+}
+.show-all-btn:hover {
+  background: url(images/023-menu-white.svg) no-repeat center/1rem;
+}
+
+/* search bar */
+.search-bar {
+  background: #fff url(images/009-search.svg) no-repeat;
+  border: 0;
+  height: 1.7rem;
+  flex: 1 0;
+  margin: 0 1rem 1rem 1rem;
+  outline: 0;
+  min-width: 10rem;
+  width: 100%;
+  text-indent: 1.6rem;
+}
+label#search:hover {
+  cursor: initial;
+  background-color: #fff;
+}
+
+
+/* HEADER TITLE */
+
+.header-title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header-title p {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.header-title a {
+  color: #68C0F5;
+  text-decoration: none;
+}
+
+
+/* HEADER TITLE - NAV TOOLS */
+
+.tools-nav {
+  align-items: center;
+  display: flex;
+  margin: 1rem 0.5rem;
+  width: auto;
+}
+.tools-nav button {
+  border: 0.09rem solid rgba(137, 140, 148, 0.235);
+  border-radius: 5rem;
+  margin-right: 1rem;
+  height: 2rem;
+  width: 2rem;
+}
+.tools-nav button svg {
+  fill: #898C94;
+  height: 0.8rem;
+  width: 0.9rem;
+}
+
+/* open button */
+.tools-nav button:first-of-type {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 0.4rem;
+  width: 5rem;
+}
+.tools-nav button div {
+  background-color: #7BBB31;
+  border-radius: 50%;
+  border:  0.09rem solid rgba(137, 140, 148, 0.235);
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+
+/* MAIN CONTENT NAV TABS */
+
+.header-tabs {
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 80%;
+} 
+
+.header-nav ul {
+  position: absolute;
+}
+
+.header-tabs li {
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin: 1rem 0 0 0.3rem;
+  padding-bottom: 1rem;
+}
+
+.header-tabs li:first-of-type {
+  margin-left: 1rem;
+}
+
+.header-tabs li:hover {
+  border-bottom: 0.2rem solid cornflowerblue;
+}
+
+/* MAIN CONTENT BODY */
+
+.page-body{
+  align-content: flex-start;
+  background-color: #EAF0F5;
+  border-top:  0.09rem solid rgba(137, 140, 148, 0.235);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* SHOW DATA GRAPHS BUTTON */
+.show-more {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  order: 1;
+  height: 3rem;
+  padding: 0 2rem;
+  width: 100%;
+}
+.show-more button {
+  border:  0.09rem solid rgba(137, 140, 148, 0.235);
+  border-radius: 50%;
+  margin: 0 0.2rem;
+  height: 1.5rem;
+  width: 3rem;
+}
+
+/* REMOVE DATA GRAPH */
+.show-more-data {
+  background: rgb(250, 249, 247) url(images/chevron-arrow-up.png) no-repeat 50% 50%/40% 40%;
+}
+.show-more:active ~ .data-graphic {
+  display: none;
+}
+.show-more-data:active {
+  background: rgb(250, 249, 247) url(images/chevron-arrow-down.png) no-repeat 50% 50%/40% 40%;
+}
+hr {
+  background-color:#b9bfc4;
+  border: 0;
+  height: 0.064rem;
+  width: 100%;
+
+}
+
+/* DATA GRAPHS */
+/* main container */
+.data-graphic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  order: 0;
+  width: 100%;
+}
+
+/* Graph containers */
+.data-graphic aside {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  width: 20rem;
+  margin: 1rem 2rem;
+}
+
+/* Graph div */
+.data-graphic div {
+  height: 20rem;
+}
+
+/* graph buttons */
+.data-graphic button {
+  background-color: #FAF9F7;
+  border:  0.09rem solid rgba(137, 140, 148, 0.235);
+  border-radius: 2rem;
+  font-size: 0.6rem;
+  height: 1.5rem;
+  padding: 0 1rem;
+  width: auto;
+}
+
+/* BOTTOM HALF OF PAGE */
+
+.bottom-half-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  order: 3;
+  width: auto;
+}
+
+/* !ARTICLE INFORMATION! */
+.main-summary {
+  background-color: #FAF9F7;
+  box-shadow: 0 2px 3px rgb(208, 213, 218);
+  border-radius: 0.2rem;
+  flex: 1;
+  margin: 2rem;
+  max-height: 40rem;
+  max-width: 50rem;
+  min-width: 30rem;
+  order: 2;
+  padding: 0 2rem 2rem 2rem;
+  position: relative;
+}
+
+/* Job Description background */
+
+.main-summary div {
+  background-color: #64738A;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4.3rem;
+  width: 100%;
+  z-index: 0;
+}
+
+/* Job Key/Values */
+.main-summary section {
+  align-items: flex-start;
+  display: flex;
+  font-size: 0.7rem;
+  padding: 1.4rem 0;
+  width: 100%;
+}
+
+/* job headers */
+.main-summary h3 {
+  min-width: 9rem;
+}
+
+/* job info */
+.main-summary p {
+  font-size: 0.8rem;
+}
+
+/* job description header */
+.sum-header h3 {
+  color: #fff;
+  margin: 0.4rem 0;
+  z-index: 1;
+}
+
+/* JOB EDIT BUTTON */
+.sum-header button {
+  background: #7c8ca6 url(images/017-feather-and-ink-bottle-white.svg) no-repeat 13% 40%/20%;
+  border-radius: 0.2rem;
+  color: #fff;
+  display: flex;
+  height: 1.5rem;
+  margin: auto 0;
+  text-indent: 1.5rem;
+  width: 4rem;
+  z-index: 2;
+}
+
+/* HIRING LEAD PICTURE */
+
+.sum-hiring-lead aside {
+  background: url(images/ezgif.com-crop.jpg) no-repeat 20% 0%/140%;
+  border-radius: 50%;
+  margin: -0.4rem 0.4rem auto 0;
+  height: 2rem;
+  width: 2rem;
+}
+
+/* FOOTER */
+
+.page-footer {
+  display: flex;
+  flex-flow: column;
+  flex: 0.5;
+  height: auto;
+  margin: 2rem;
+  order: 3;
+  /* padding: 1rem 0; */
+}
+
+/* MEDIA BUTTONS */
+.media-btns {
+  display: flex;
+  flex-flow: column;
+  font-size: 0.8rem;
+  justify-content: space-between;
+  height: 11rem;
+  max-width: 20rem;
+  min-width: 20rem;
+}
+.media-btns button {
+  color: #fff;
+  border-radius: 0.1rem;
+  height: 2.8rem;
+  width: 100%;
+}
+
+/* Facebook */
+.facebook {
+  background: #475993 url(images/facebook-logo.svg) no-repeat 0.8rem 1rem/1rem;
+}
+
+/* Twitter */
+.twitter {
+  background: #49A9E9 url(images/013-twitter.svg) no-repeat 0.8rem 1rem/1rem;
+}
+/* LinkedIn */
+.linkedin {
+  background: #3680B7 url(images/010-linkedin.svg) no-repeat 0.8rem 1rem/1rem;
+}
+
+/* JOB INPUTS */
+
+.page-footer aside {
+  border-bottom:  0.09rem solid rgba(137, 140, 148, 0.235);
+  max-width: 20rem;
+  min-width: 20rem;
+  padding: 1.4rem 0;
+}
+
+.r-aside img {
+  width: 0.9rem;
+}
+
+.r-aside p {
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+.r-aside input {
+  border: 0;
+  font-size: 0.8rem;
+  height: 2rem;
+  text-indent: 0.4rem;
+  width: 80%;
+}
+.upload-resume input {
+  width: 100%;
+}
+
+.r-aside button {
+  background-color: #3db4be;
+  color: #fff;
+  height: 2rem;
+  width: 20%;
+}
+/* Link To This Job */
+
+/* Use the Button Widget */
+
+/* Upload Resumes by Email */
+
+/** EXPERIMENT **/
+.test-button {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.show-more-container {
+  cursor: pointer;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  user-select: none;
+  width: 100%;
+}
+.show-more-container input {
+  position: relative;
+  background-color: blue;
+  /* order: 2; */
+  opacity: 0;
+  cursor: pointer;
+}
+
+.show-more-button-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  order: 3;
+  position: relative;
+  height: 1rem;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.show-more-checkmark {
+  background: #fff url(images/chevron-arrow-down.png) no-repeat 50% 50%/40% 40%;
+  border-radius: 50%;
+  height: 1rem;
+  margin: 0 0.2rem;
+  padding: 0 0.5rem;
+  position: relative;
+  width: 1rem;
+}
+
+.show-more-container input:checked ~ .show-more-checkmark {
+  filter: brightness(130%);
+}
+.show-more-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* .show-more-container input:checked ~ .show-more-checkmark:after {
+  display: flex;
+} */
+.show-more-container input[type=checkbox]:checked ~.testgraphic {
+  display: flex;
+}
+.show-more-container ~ .show-more-checkmark:after {
+  background: #fff url(images/chevron-arrow-up.png) no-repeat 50% 50%/40% 40%;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  z-index: 2;
+}
+
+.show-more-container:hover input ~ .show-more-checkmark {
+  filter: brightness(30%);
+}
+
+.testgraphic {
+  display: none;
+  position: relative;
+  background-color: pink;
+  order: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 400px) {
+  .container {
+
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+
+  }
+
+}
