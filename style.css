@@ -460,10 +460,11 @@ hr {
 /* DATA GRAPHS */
 /* main container */
 .data-graphic {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
   order: 0;
+  position: relative;
   width: 100%;
 }
 
@@ -658,16 +659,12 @@ hr {
   height: 2rem;
   width: 20%;
 }
-/* Link To This Job */
 
-/* Use the Button Widget */
-
-/* Upload Resumes by Email */
-
-/** EXPERIMENT **/
+/** DATA-GRAPHIC DROPDOWN **/
 .test-button {
   display: flex;
   flex-flow: column nowrap;
+  margin: 1rem 0;
   width: 100%;
 }
 
@@ -684,43 +681,28 @@ hr {
   user-select: none;
   width: 100%;
 }
+
 .show-more-container input {
   position: relative;
-  background-color: blue;
-  /* order: 2; */
   opacity: 0;
-  cursor: pointer;
 }
 
-/* .show-more-button-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  order: 3;
-  position: relative;
-  height: 1rem;
-  padding: 0 2rem;
-  width: 100%;
-} */
-
 .show-more-checkmark {
-  background: #fff url(images/chevron-arrow-down.png) no-repeat 50% 50%/40% 40%;
+  background: #fff url(images/chevron-arrow-down.png) no-repeat 49.5% 55%/43% 43%;
   border-radius: 50%;
   display: flex;
-  height: 1rem;
-  margin: 0 0.2rem;
+  height: 1.2rem;
   padding: 0 0.5rem;
-  /* position: relative; */
-  width: 1rem;
+  width: 1.2rem;
   z-index: 5;
 }
 
 .line {
-  background-color: #64738A;
-  margin: 0.5rem auto;
-  padding-bottom: 0.1rem;
+  border-bottom: 0.06rem solid #8f9aad;
+  margin: 0.6rem auto;
+  height: 0.1rem;
   position: absolute;
-  width: 95%;
+  width: 94%;
   z-index: 4;
 }
 
@@ -729,30 +711,21 @@ hr {
   position: absolute;
   display: none;
 }
-/* .show-more-container input:checked ~ .show-more-checkmark:after {
+
+.show-more-container input:checked ~ .data-graphic {
   display: flex;
-} */
-.show-more-container input[type=checkbox]:checked ~.testgraphic {
-  display: flex;
-}
-.show-more-container input:checked ~ .show-more-checkmark {
-  background: #fff url(images/chevron-arrow-up.png) no-repeat 50% 50%/40% 40%;
-  border-radius: 50%;
-  width: 1rem;
-  height: 1rem;
-}
-.show-more-container input:checked ~ .show-more-checkmark ~ .line {
-  bottom: 0;
 }
 
-.testgraphic {
-  display: none;
-  position: relative;
-  background-color: pink;
-  order: 0;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
+.show-more-container input:checked ~ .show-more-checkmark {
+  background: #fff url(images/chevron-arrow-up.png) no-repeat 49.8% 48%/45% 45%;
+  border-radius: 50%;
+  margin: 0 0 0 1.05rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.show-more-container input:checked ~ .show-more-checkmark ~ .line {
+  bottom: 0;
 }
 
 @media only screen and (min-width: 400px) {
