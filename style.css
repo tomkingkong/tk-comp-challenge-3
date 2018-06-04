@@ -11,8 +11,9 @@ body {
   flex-flow: row;
   font-family: 'Open Sans', sans-serif;
   height: 100%;
-  width: 100vw;
+  position: relative;
   transition: all 0.10s linear;
+  width: 100vw;
 }
 
 ::placeholder {
@@ -21,6 +22,25 @@ body {
 
 button:hover {
   filter: brightness(80%);
+}
+
+/* SHOW LEFT SIDE BAR */
+.show-side-bar {
+  background-color: transparent;
+  cursor: pointer;
+  height: 4rem;
+  position: absolute;
+  width: 4rem;
+  z-index: 5;
+}
+
+.show-side-bar:hover {
+  width: 10rem;
+  height: 100%;
+}
+
+.show-side-bar:hover ~ .side-bar{
+  display: flex;
 }
 
 /* LEFT SIDE BAR */
@@ -298,6 +318,7 @@ h5 {
   background-color: #129AF9;
 }
 
+/* TODO: Update Burger Button with Left Chevron */
 /* Burger Nav Button */
 
 .side-bar-burger {
@@ -406,6 +427,7 @@ label#search:hover {
   width: 0.9rem;
 }
 
+/* TODO: Make open button glow when hover */
 /* open button */
 
 .tools-nav button:first-of-type {
@@ -422,6 +444,10 @@ label#search:hover {
   border: 0.09rem solid rgba(137, 140, 148, 0.235);
   height: 0.8rem;
   width: 0.8rem;
+}
+
+.tools-nav button:hover {
+  background-color: #FAF9F7;
 }
 
 /* MAIN CONTENT NAV TABS */
@@ -451,6 +477,52 @@ label#search:hover {
 .header-tabs li:hover {
   border-bottom: 0.2rem solid cornflowerblue;
   filter: brightness(110%);
+}
+
+
+/* HEADER TABS -- CONDENSED */
+
+.header-tabs-condensed {
+  background-color: #fff;
+  border-radius: 0.4rem 0.4rem 0 0;
+  border-top: 0.05rem solid #8f9aad;
+  border-right: 0.05rem solid #8f9aad;
+  border-left: 0.05rem solid #8f9aad;
+  color: #2f384a;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin: 0 0 0 2rem;
+  padding: 0.4rem 0;
+  text-align: center;
+  width: 4rem;
+  height: 2rem;
+  z-index: 7;
+}
+
+.header-tabs-condensed:hover {
+  
+}
+
+.header-tabs-condensed:hover ~ .header-tabs {
+  background-color: #EBF0F5;
+  border: 0.05rem solid #8f9aad;
+  color: #2F3848;
+  display: flex;
+  flex-flow: column;
+  margin: 17.5rem 0 0 2rem;
+  padding: 1rem;
+  position: absolute;
+  text-align: left;
+  width: 7rem;
+  z-index: 6;
+}
+
+.header-tabs-condensed:hover ~ .header-tabs ul {
+  width: 100px;
+}
+
+.header-tabs-condensed:hover ~ .header-tabs li {
+  margin: 0;
 }
 
 /* MAIN CONTENT BODY */
@@ -534,7 +606,7 @@ hr {
   /* max-width: 50%; */
   /* min-width: 50%; */
 }
-
+/* TODO: Add Pie Graph SVGs */
 /* Pie Graphs */
 
 .pie-graph {
@@ -584,6 +656,7 @@ hr {
   font-weight: 700;
 }
 
+/* TODO: Make Bar Graph Respnsive at mobile scale */
 /* Bar Graph */
 
 .bar-graph {
@@ -731,7 +804,7 @@ hr {
   flex: 1;
   /* margin: 0.5rem 2rem 2rem 2rem; */
   max-height: 50rem;
-  /* max-width: 50rem; */
+  
   width: 100%;
   min-width: 50%;
   order: 2;
@@ -799,14 +872,13 @@ hr {
 
 /* SHARE BUTTON */
 .share-btn {
-  background: #7c8ca6 url(images/024-share-white.svg) no-repeat 13% 40%/20%;
+  background: #7c8ca6 url(images/024-share-white.svg) no-repeat center/1.2rem;
   border-radius: 0.2rem;
   color: #fff;
-  display: flex;
-  height: 1.5rem;
-  margin: auto 0;
-  text-indent: 1.5rem;
-  width: 4rem;
+  height: 2.3rem;
+  margin: -1% 75%;
+  position: absolute;
+  width: 2.3rem;
   z-index: 2;
 }
 /* HIRING LEAD PICTURE */
@@ -823,11 +895,15 @@ hr {
 
 .page-footer-container {
   display: flex;
-  flex-flow: column;
-  flex: 0.5;
+  flex-flow: row wrap;
+  flex: 1;
   height: auto;
-  margin: 0.5rem 2rem 2rem 2rem;
+  justify-content: center;
+  margin: 0.5rem auto;
+  padding: 0 0.5rem;
+  /* margin: 0.5rem 2rem 2rem 2rem; */
   order: 3;
+  width: 100%;
 }
 
 .page-footer-container button {
@@ -842,6 +918,7 @@ hr {
   font-size: 0.8rem;
   justify-content: space-between;
   height: 11rem;
+  margin: 0 auto;
   max-width: 20rem;
   min-width: 20rem;
 }
@@ -874,9 +951,10 @@ hr {
 
 .page-footer-container aside {
   border-bottom: 0.09rem solid rgba(137, 140, 148, 0.235);
+  margin: 0 auto;
   max-width: 20rem;
-  min-width: 20rem;
-  padding: 1.4rem 0;
+  min-width: 18rem;
+  padding: 1.4rem 0.5rem;
 }
 
 /* icons for link to, use widget, upload resume */
@@ -903,7 +981,7 @@ hr {
 .r-aside button {
   background-color: #3db4be;
   height: 2rem;
-  width: 3rem;
+  width: 20%;
 }
 
 .upload-resume input {
@@ -989,26 +1067,60 @@ hr {
 }
 
 @media only screen and (min-width: 400px) {
+  .page-footer-container aside {
+    padding: 1.4rem 0;
+  }
   .share-btn {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 500px){
+  .header-tabs-condensed {
+    display: none;
+  }
+  .header-tabs {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 1rem;
+    max-width: 90%;
+    min-width: 32rem;
   }
 }
 
 @media only screen and (min-width: 650px) {
   .main-summary {
     margin: 0.5rem 2rem 2rem 2rem;
+    min-width: 55%;
+    max-width: 85%;
+  }
+  .show-side-bar {
+    display: none;
+  }
+  .side-bar {
+    display: flex;
+  }
+  
+}
+
+@media only screen and (min-width: 801px) {
+  .header-tabs-condensed {
+    display: none;
   }
   .header-tabs {
     display: flex;
+  }
+}
+
+@media only screen and (min-width: 1145px) {
+  .show-more-container input:checked~.data-graphic {
+    display: none;
   }
   .data-graphic {
     display: flex;
   }
   .show-more-checkmark {
     background: #fff url(images/chevron-arrow-up.png) no-repeat 49.5% 55%/43% 43%;
-  }
-  .show-more-container input:checked~.data-graphic {
-    display: none;
   }
   .show-more-container input:checked~.show-more-checkmark {
     background: #fff url(images/chevron-arrow-down.png) no-repeat 49% 48%/43% 43%;
@@ -1019,11 +1131,5 @@ hr {
   }
   .line {
     bottom: 0;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .side-bar {
-    display: flex;
   }
 }
