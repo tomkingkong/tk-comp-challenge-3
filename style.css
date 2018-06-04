@@ -577,7 +577,6 @@ hr {
   background-color: #b9bfc4;
   border: 0;
   height: 0.064rem;
-  width: 100%;
 }
 
 /* DATA GRAPHS */
@@ -624,7 +623,7 @@ hr {
 
 .pie-graph div {
   align-items: center;
-  background-color: #8f9aad64;
+  /* background-color: #8f9aad64; */
   border-radius: 50%;
   display: flex;
   height: 7.8rem;
@@ -637,7 +636,7 @@ hr {
 .pie-graph section {
   align-items: center;
   background-color: #EAF0F5;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   display: flex;
   flex-direction: column;
   height: 7rem;
@@ -646,13 +645,12 @@ hr {
   width: 7rem;
 }
 
-.pie-graph h4 {
-  color: #2f384a;
-  font-size: 1.8rem;
+.pie-graph section h4 {
+
   margin: 0 0 0.2rem 0;
 }
 
-.pie-graph p {
+.pie-graph section p {
   font-size: 0.5rem;
   font-weight: 700;
 }
@@ -806,48 +804,20 @@ hr {
 
 /* Bar Graph Levels */
 
-.col1 {
-  height: 10%;
-}
-.col2 {
-  height: 50%;
-}
-.col3 {
-  height: 60%;
-}
-.col4 {
-  height: 75%;
-}
-.col5 {
-  height: 40%;
-}
-.col6 {
-  height: 50%;
-}
-.col7 {
-  height: 30%;
-}
-.col8 {
-  height: 10%;
-}
-.col9 {
-  height: 75%;
-}
-.col10 {
-  height: 85%;
-}
-.col11 {
-  height: 60%;
-}
-.col12 {
-  height: 40%;
-}
-.col13 {
-  height: 30%;
-}
-.col14 {
-  height: 20%;
-}
+.col1 {height: 10%;}
+.col2 {height: 50%;}
+.col3 {height: 60%;}
+.col4 {height: 75%;}
+.col5 {height: 40%;}
+.col6 {height: 50%;}
+.col7 {height: 30%;}
+.col8 {height: 10%;}
+.col9 {height: 75%;}
+.col10 {height: 85%;}
+.col11 {height: 60%;}
+.col12 {height: 40%;}
+.col13 {height: 30%;}
+.col14 {height: 20%;}
 
 /* graph buttons */
 
@@ -904,6 +874,7 @@ hr {
 .job-summary section {
   align-items: flex-start;
   display: flex;
+  flex-flow: column;
   font-size: 0.7rem;
   padding: 1.4rem 0;
   width: 100%;
@@ -940,7 +911,7 @@ hr {
   display: flex;
   height: 1.5rem;
   margin: auto 0;
-  text-indent: 1.5rem;
+  text-indent: 1.8rem;
   width: 4rem;
   z-index: 2;
 }
@@ -1141,12 +1112,90 @@ hr {
   bottom: 0;
 }
 
+
+
+/* EXPERIMENT SVG CIRCLES */
+
+.flex-wrapper {
+  background-color: #EBF0F5;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pie-graph-container {
+  margin: 1rem;
+  position: relative;
+}
+
+.single-chart {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-width: 5rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+.single-chart svg {
+  position: absolute;
+  z-index: 0;
+}
+
+.single-chart p, 
+h4 {
+  color: #2f384a;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+.circular-chart {
+  width: 8rem;
+  height: 8.4rem;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #b1b5bd4b;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  animation: progress 0.75s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.green {stroke: #47b9ba;}
+
+.blue {stroke: #17a0f5;}
+
+.purple {stroke: #b06ab0;}
+
+/* MEDIA QUERIES */
+
 @media only screen and (min-width: 400px) {
   .page-footer-container aside {
     padding: 1.4rem 0;
   }
   .job-summary {
     margin: 1rem 0;
+  }
+  .job-summary section {
+    flex-flow: row;
   }
 }
 
