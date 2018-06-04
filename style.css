@@ -482,6 +482,7 @@ label#search:hover {
 
 /* HEADER TABS -- CONDENSED */
 
+/* TODO: make input selector for tabs */
 .header-tabs-condensed {
   background-color: #fff;
   border-radius: 0.4rem 0.4rem 0 0;
@@ -657,6 +658,20 @@ hr {
 }
 
 /* TODO: Make Bar Graph Respnsive at mobile scale */
+
+/* .bar-graph-container {
+  transform: rotate(90deg);
+}
+
+.day-horizontal p{
+  transform: rotate(-90deg);
+}
+
+.num-vertical p {
+  transform: rotate(-90deg);
+} */
+
+
 /* Bar Graph */
 
 .bar-graph {
@@ -681,6 +696,7 @@ hr {
   height: 10rem;
   margin: 0 0 0.5rem 0.8rem;
   min-width: 1rem;
+  position: relative;
   transition: all 0.15s linear;
 }
 
@@ -695,10 +711,71 @@ hr {
   border-radius: 0.1rem;
   cursor: pointer;
   margin: 0 auto;
+  order: 0;
   padding: 0;
   position: relative;
   width: 100%;
+  z-index: 10;
 }
+
+.bar-graph div:hover ~ .popup {
+  display: block;
+}
+
+.bar-graph .bar-container {
+  position: relative;
+}
+
+/* POP UP -- Bar Columns */
+
+.popup {
+  background-color: #364051;
+  border-radius: 0.2rem;
+  bottom: 8rem;
+  color: #fff;
+  display: none;
+  height: 3rem;
+  right: -4.5rem;
+  order: 1;
+  padding: 0.5rem 0;
+  position: absolute;
+  text-align: center;
+  width: 10rem;
+  z-index: 1000 !important;
+}
+.popup .applicant-num{
+  color: #00af8b;
+}
+.popup .interview-num{
+  color: #129AF9;
+}
+
+.bottom-arrow {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 2rem;
+  left: 4.3rem;
+  background-color: #364051;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+/* Individual heights for popup window */
+.p1 {bottom: 2.2rem;}
+.p2 {bottom: 6.2rem;}
+.p3 {bottom: 7.2rem;}
+.p4 {bottom: 8.8rem;}
+.p5 {bottom: 5.2rem;}
+.p6 {bottom: 6.2rem;}
+.p7 {bottom: 4.2rem;}
+.p8 {bottom: 2.2rem;}
+.p9 {bottom: 8.8rem;}
+.p10 {bottom: 9.8rem;}
+.p11 {bottom: 7.2rem;}
+.p12 {bottom: 5.2rem;}
+.p13 {bottom: 4.2rem;}
+.p14 {bottom: 3.2rem;}
 
 /* Bar Graph Amounts */
 
@@ -797,14 +874,12 @@ hr {
 
 /* !ARTICLE INFORMATION! */
 
-.main-summary {
+.job-summary {
   background-color: #FAF9F7;
   box-shadow: 0 2px 3px rgb(208, 213, 218);
   border-radius: 0.2rem;
   flex: 1;
-  /* margin: 0.5rem 2rem 2rem 2rem; */
   max-height: 50rem;
-  
   width: 100%;
   min-width: 50%;
   order: 2;
@@ -814,7 +889,7 @@ hr {
 
 /* Job Description background */
 
-.main-summary div {
+.job-summary div {
   background-color: #64738A;
   position: absolute;
   top: 0;
@@ -826,7 +901,7 @@ hr {
 
 /* Job Key/Values */
 
-.main-summary section {
+.job-summary section {
   align-items: flex-start;
   display: flex;
   font-size: 0.7rem;
@@ -836,13 +911,13 @@ hr {
 
 /* job headers */
 
-.main-summary h3 {
+.job-summary h3 {
   min-width: 9rem;
 }
 
 /* job info */
 
-.main-summary p {
+.job-summary p {
   font-size: 0.8rem;
   max-height: 5rem;
   overflow-y: scroll;
@@ -875,6 +950,7 @@ hr {
   background: #7c8ca6 url(images/024-share-white.svg) no-repeat center/1.2rem;
   border-radius: 0.2rem;
   color: #fff;
+  display: flex;
   height: 2.3rem;
   margin: -1% 75%;
   position: absolute;
@@ -1069,15 +1145,15 @@ hr {
   .page-footer-container aside {
     padding: 1.4rem 0;
   }
-  .share-btn {
-    display: none;
-  }
-  .main-summary {
+  .job-summary {
     margin: 1rem 0;
   }
 }
 
 @media only screen and (min-width: 500px){
+  .share-btn {
+    display: none;
+  }
   .header-tabs-condensed {
     display: none;
   }
@@ -1091,7 +1167,7 @@ hr {
 }
 
 @media only screen and (min-width: 650px) {
-  .main-summary {
+  .job-summary {
     margin: 0.5rem 2rem 2rem 2rem;
     min-width: 55%;
     max-width: 85%;
