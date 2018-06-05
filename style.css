@@ -6,7 +6,7 @@
   display: flex;
   flex-flow: row;
   font-family: 'Open Sans', sans-serif;
-  height: 100vh;
+  height: 100%;
   position: relative;
   transition: all 0.10s linear;
   width: 100vw;
