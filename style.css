@@ -6,7 +6,7 @@
   display: flex;
   flex-flow: row;
   font-family: 'Open Sans', sans-serif;
-  height: 100%;
+  height: 100vh;
   position: relative;
   transition: all 0.10s linear;
   width: 100vw;
@@ -793,21 +793,14 @@ hr {
 .blue {stroke: #17a0f5;}
 .purple {stroke: #b06ab0;}
 
-/* TODO: Make Bar Graph Respnsive at mobile scale */
 
-/* .bar-graph-container {
-  transform: rotate(90deg);
-}
-
-.day-horizontal p{
-  transform: rotate(-90deg);
-}
-
-.num-vertical p {
-  transform: rotate(-90deg);
-} */
 
 /* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH */
+
+.bar-graph-container {
+  transform: scale(0.7);
+  transition: all 0.15s linear;
+} 
 
 /*MAIN CONTENT BODY -- TOGGLE DATA GRAPH --  BAR GRAPH -- PARENT CONTAINER */
 
@@ -1188,6 +1181,12 @@ hr {
 
 @media only screen and (min-width: 400px) {
 
+  /* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- GROW! */
+
+  .bar-graph-container {
+    transform: scale(0.9);
+  } 
+
   /* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER -- Update Padding to avoid Collision */
   
   .page-footer-container aside {
@@ -1215,6 +1214,12 @@ hr {
 
 @media only screen and (min-width: 500px){
 
+  /* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- GROW! */
+
+  .bar-graph-container {
+    transform: scale(1);
+  } 
+
   /* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- HEADER TITLE -- Hide Share Button for Desktop View */
   
   .share-btn {
@@ -1235,6 +1240,10 @@ hr {
 }
 
 @media only screen and (min-width: 650px) {
+
+  .bar-graph-container {
+    transform: scale(1.1);
+  } 
 
   /* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER-- Update Margins for Midsize View */
   
