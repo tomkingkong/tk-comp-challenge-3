@@ -56,7 +56,11 @@
       <div class="page">
         <header class="page-header">
           <nav class="header-nav">
-            <button id="sidebar-nav" class="side-bar-burger"></button>
+            <button id="sidebar-nav" class="side-bar-burger"><?xml version="1.0"?>
+              <svg class="blue-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20" height="20" viewBox="-290 0 462.359 292.359" style="enable-background:new 0 0 292.359 292.359;" xml:space="preserve" class=""><g><g>
+                <path d="M222.979,5.424C219.364,1.807,215.08,0,210.132,0c-4.949,0-9.233,1.807-12.848,5.424L69.378,133.331   c-3.615,3.617-5.424,7.898-5.424,12.847c0,4.949,1.809,9.233,5.424,12.847l127.906,127.907c3.614,3.617,7.898,5.428,12.848,5.428   c4.948,0,9.232-1.811,12.847-5.428c3.617-3.614,5.427-7.898,5.427-12.847V18.271C228.405,13.322,226.596,9.042,222.979,5.424z" data-original="#000000" class="active-path" fill="#129AFA"/>
+              </g></g> </svg>
+              </button>
             <input class="search-bar" type="search" placeholder="Search for a job, task or resume">
             <button id="profile" class="profile-btn"></button>
             <button id="calendar" class="calendar-btn"></button>
@@ -74,7 +78,16 @@
               <button class="trash-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 290"><path d="M265 60h-45V15c0-8.284-6.716-15-15-15H85c-8.284 0-15 6.716-15 15v45H25c-8.284 0-15 6.716-15 15s6.716 15 15 15h15v185c0 8.284 6.716 15 15 15h180c8.284 0 15-6.716 15-15V90h15c8.284 0 15-6.716 15-15s-6.716-15-15-15zM100 30h90v30h-90V30zM70 90h30v170H70V90zm60 0h30v170h-30V90zm90 170h-30V90h30v170z"/></svg></button>
             </nav>
           </section>
-          <button class="header-tabs-condensed" aria-label="show info">INFO</button>
+            <container class="header-tabs-container">
+              <div class="tab-summary">SUMMARY</div>
+              <div class="tab-applicants">APPLICANTS</div>
+              <div class="tab-jobboard">JOB BOARD</div>
+              <div class="tab-interviews">INTERVIEWS</div>
+              <div class="tab-activity">ACTIVITY</div>
+              <div class="tab-broadcast">BROADCAST</div>
+              <div class="tab-notifications">NOTIFICATIONS</div>
+            </container>
+            <button class="header-tabs-condensed" aria-label="show info">INFO</button>
           <ul class="header-tabs">
             <li>SUMMARY</li>
             <li>APPLICANTS</li>
@@ -156,26 +169,6 @@
                           </div>
                         </aside>
                       </div>
-                      <!-- <container class="pie-graph">
-                        <div class="applicants-pie">
-                          <section>
-                            <h4>3,154</h4>
-                            <p>APPLICANTS</p>
-                          </section>
-                        </div>
-                        <div class="interviews-pie">
-                          <section>
-                            <h4>1,546</h4>
-                            <p>INTERVIEWS</p>
-                          </section>
-                        </div>
-                        <div class="forwards-pie">
-                          <section>
-                            <h4>912</h4>
-                            <p>FORWARDS</p>
-                          </section>
-                        </div>
-                      </container> -->
                       <button class="pie-graph-btn">TOTALS - Out of 5,234 views</button>
                     </aside>
                     <aside class="bar-graph-container"> 
@@ -188,20 +181,20 @@
                           <p>100</p>
                           <p>0</p>
                         </div>
-                        <container class="bar-container"><div><section class="col1"></section></div><container class="popup p1"><p>Sunday, May6<br/><br/><span class="applicant-num">382</span> Applicants/<span class="interview-num">47</span> Interviewers</p><p class="bottom-arrow"></p></container></container>
-                        <container class="bar-container"><div><section class="col2"></section></div><container class="popup p2"><p>Monday, May7<br/><br/><span class="applicant-num">382</span> Applicants/<span class="interview-num">47</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
-                        <container class="bar-container"><div><section class="col3"></section></div><container class="popup p3"><p>Tuesday, May8<br/><br/><span class="applicant-num">382</span> Applicants/<span class="interview-num">47</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
-                        <container class="bar-container"><div><section class="col4"></section></div><container class="popup p4"><p>Wednesday, May9<br/><br/><span class="applicant-num">382</span> Applicants/<span class="interview-num">47</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
-                        <container class="bar-container"><div><section class="col5"></section></div><container class="popup p5"><p>Thursday, May10<br/><br/><span class="applicant-num">382</span> Applicants/<span class="interview-num">47</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
-                        <container class="bar-container"><div><section class="col6"></section></div><container class="popup p6"><p>Friday, May11<br/><br/><span class="applicant-num">382</span> Applicants/<span class="interview-num">47</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
-                        <container class="bar-container"><div><section class="col7"></section></div><container class="popup p7"><p>Saturday, May12<br/><br/><span class="applicant-num">382</span> Applicants/<span class="interview-num">47</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
-                        <container class="bar-container"><div><section class="col8"></section></div><container class="popup p8"><p>Sunday, May13<br/><br/><span class="applicant-num">382</span> Applicants/<span class="interview-num">47</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
-                        <container class="bar-container"><div><section class="col9"></section></div><container class="popup p9"><p>Monday, May14<br/><br/><span class="applicant-num">382</span> Applicants/<span class="interview-num">47</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
-                        <container class="bar-container"><div><section class="col10"></section></div><container class="popup p10"><p>Tuesday, May15<br/><br/><span class="applicant-num">382</span> Applicants/<span class="interview-num">47</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
-                        <container class="bar-container"><div><section class="col11"></section></div><container class="popup p11"><p>Wednesday, May16<br/><br/><span class="applicant-num">382</span> Applicants/<span class="interview-num">47</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
-                        <container class="bar-container"><div><section class="col12"></section></div><container class="popup p12"><p>Thursday, May17<br/><br/><span class="applicant-num">382</span> Applicants/<span class="interview-num">47</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
-                        <container class="bar-container"><div><section class="col13"></section></div><container class="popup p13"><p>Friday, May18<br/><br/><span class="applicant-num">382</span> Applicants/<span class="interview-num">47</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
-                        <container class="bar-container"><div><section class="col14"></section></div><container class="popup p14"><p>Saturday, May19<br/><br/><span class="applicant-num">382</span> Applicants/<span class="interview-num">47</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
+                        <container class="bar-container"><div><section class="col1"></section></div><container class="popup p1"><p>Sunday, May 6<br/><br/><span class="applicant-num">32</span> Applicants /<span class="interview-num"> 4</span> Interviewers</p><p class="bottom-arrow"></p></container></container>
+                        <container class="bar-container"><div><section class="col2"></section></div><container class="popup p2"><p>Monday, May 7<br/><br/><span class="applicant-num">282</span> Applicants /<span class="interview-num"> 34</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
+                        <container class="bar-container"><div><section class="col3"></section></div><container class="popup p3"><p>Tuesday, May 8<br/><br/><span class="applicant-num">290</span> Applicants /<span class="interview-num"> 80</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
+                        <container class="bar-container"><div><section class="col4"></section></div><container class="popup p4"><p>Wednesday, May 9<br/><br/><span class="applicant-num">322</span> Applicants /<span class="interview-num"> 72</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
+                        <container class="bar-container"><div><section class="col5"></section></div><container class="popup p5"><p>Thursday, May 10<br/><br/><span class="applicant-num">208</span> Applicants /<span class="interview-num"> 47</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
+                        <container class="bar-container"><div><section class="col6"></section></div><container class="popup p6"><p>Friday, May 11<br/><br/><span class="applicant-num">257</span> Applicants /<span class="interview-num"> 72</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
+                        <container class="bar-container"><div><section class="col7"></section></div><container class="popup p7"><p>Saturday, May 12<br/><br/><span class="applicant-num">36</span> Applicants /<span class="interview-num"> 2</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
+                        <container class="bar-container"><div><section class="col8"></section></div><container class="popup p8"><p>Sunday, May 13<br/><br/><span class="applicant-num">297</span> Applicants /<span class="interview-num"> 32</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
+                        <container class="bar-container"><div><section class="col9"></section></div><container class="popup p9"><p>Monday, May 14<br/><br/><span class="applicant-num">330</span> Applicants /<span class="interview-num"> 97</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
+                        <container class="bar-container"><div><section class="col10"></section></div><container class="popup p10"><p>Tuesday, May 15<br/><br/><span class="applicant-num">274</span> Applicants /<span class="interview-num"> 76</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
+                        <container class="bar-container"><div><section class="col11"></section></div><container class="popup p11"><p>Wednesday, May 16<br/><br/><span class="applicant-num">193</span> Applicants /<span class="interview-num"> 22</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
+                        <container class="bar-container"><div><section class="col12"></section></div><container class="popup p12"><p>Thursday, May 17<br/><br/><span class="applicant-num">104</span> Applicants /<span class="interview-num"> 23</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
+                        <container class="bar-container"><div><section class="col13"></section></div><container class="popup p13"><p>Friday, May 18<br/><br/><span class="applicant-num">87</span> Applicants /<span class="interview-num"> 13</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
+                        <container class="bar-container"><div><section class="col14"></section></div><container class="popup p14"><p>Saturday, May 19<br/><br/><span class="applicant-num">77</span> Applicants /<span class="interview-num"> 9</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
                       </container>
                       <div class="day-horizontal">
                         <p>S</p>

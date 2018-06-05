@@ -97,6 +97,7 @@ h5 {
 .profile-photo aside {
   background: url(images/ezgif.com-crop.jpg) no-repeat 20% 0%/140%;
   border-radius: 50%;
+  
   margin: 0.5rem auto;
   height: 5rem;
   width: 5rem;
@@ -287,6 +288,7 @@ h5 {
   background-color: #fff;
   display: flex;
   flex-flow: column;
+  align-content: flex-end;
   min-height: 13rem;
   height: auto;
   width: 100%;
@@ -330,7 +332,9 @@ h5 {
 .side-bar-burger:hover {
   background: url(images/026-menu-1-white.svg) no-repeat center/1rem;
 }
-
+.blue-arrow {
+  display: none;
+}
 .header-nav .left-arrow {
   height: 1.5rem;
   width: 0.8rem;
@@ -369,7 +373,7 @@ h5 {
 /* search bar */
 
 .search-bar {
-  background: #fff url(images/009-search.svg) no-repeat;
+  background: #fff url(images/search.svg) no-repeat;
   border: 0;
   height: 1.7rem;
   flex: 1 0;
@@ -409,7 +413,7 @@ label#search:hover {
 .tools-nav {
   align-items: center;
   display: flex;
-  margin: 1rem 0.5rem 1rem 0;
+  margin: 1rem 0.5rem 1.8rem 0;
   width: auto;
 }
 
@@ -417,25 +421,25 @@ label#search:hover {
   border: 0.09rem solid rgba(137, 140, 148, 0.235);
   border-radius: 5rem;
   margin-right: 1rem;
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .tools-nav button svg {
   fill: #898C94;
-  height: 0.8rem;
-  width: 0.9rem;
+  margin-top: 0.3rem;
+  width: 1rem;
 }
 
-/* TODO: Make open button glow when hover */
 /* open button */
 
 .tools-nav button:first-of-type {
   align-items: center;
+  color: rgb(96, 99, 105);
   display: flex;
   justify-content: space-around;
-  padding: 0 0.4rem;
-  width: 5rem;
+  padding: 0.15rem 0.4rem 0 0.4rem;
+  width: 6rem;
 }
 
 .tools-nav button div {
@@ -447,7 +451,8 @@ label#search:hover {
 }
 
 .tools-nav button:hover {
-  background-color: #FAF9F7;
+  filter: brightness(100%);
+  background-color: #EBF0F5;
 }
 
 /* MAIN CONTENT NAV TABS */
@@ -480,9 +485,47 @@ label#search:hover {
 }
 
 
+/* HEADER TABS -- TABBED */
+
+.header-tabs-container {
+  display: none;
+  position: relative;
+}
+
+.header-tabs-container div {
+  background-color: #fff;
+  border-radius: 0.25rem 0.25rem 0 0;
+  border-top: 0.05rem solid #8f9aad;
+  border-right: 0.05rem solid #8f9aad;
+  border-left: 0.05rem solid #8f9aad;
+  bottom: 0;
+  cursor: pointer;
+  font-size: 0.8rem;
+  max-height: 2rem;
+  min-height: 1.5rem;
+  margin: 0 0 0 2rem;
+  padding: 0.4rem;
+  position: absolute;
+  text-align: right;
+  width: auto;
+
+}
+.header-tabs-container div:hover {
+  background-color: #68C0F5;
+  color: #fff;
+  z-index: 100;
+}
+
+.tab-summary {z-index: 10;}
+.tab-applicants {left: 2rem; z-index: 9;}
+.tab-jobboard {left: 5rem; z-index: 8;}
+.tab-interviews {left: 7rem; z-index: 7;}
+.tab-activity {left: 11rem; z-index: 6;}
+.tab-broadcast {left: 12rem; z-index: 5;}
+.tab-notifications {left: 13rem; z-index: 4;}
+
 /* HEADER TABS -- CONDENSED */
 
-/* TODO: make input selector for tabs */
 .header-tabs-condensed {
   background-color: #fff;
   border-radius: 0.4rem 0.4rem 0 0;
@@ -498,10 +541,6 @@ label#search:hover {
   width: 4rem;
   height: 2rem;
   z-index: 7;
-}
-
-.header-tabs-condensed:hover {
-  
 }
 
 .header-tabs-condensed:hover ~ .header-tabs {
@@ -524,7 +563,7 @@ label#search:hover {
 
 .header-tabs-condensed:hover ~ .header-tabs li {
   margin: 0;
-}
+} 
 
 /* MAIN CONTENT BODY */
 
@@ -562,7 +601,7 @@ label#search:hover {
 /* REMOVE DATA GRAPH */
 
 .show-more-data {
-  background: rgb(250, 249, 247) url(images/chevron-arrow-up.png) no-repeat 50% 50%/40% 40%;
+  background: rgb(250, 249, 247) url(images/chevron-arrow-up.png) no-repeat 50% 50%/40%;
 }
 
 .show-more:active~.data-graphic {
@@ -570,7 +609,7 @@ label#search:hover {
 }
 
 .show-more-data:active {
-  background: rgb(250, 249, 247) url(images/chevron-arrow-down.png) no-repeat 50% 50%/40% 40%;
+  background: rgb(250, 249, 247) url(images/chevron-arrow-down.png) no-repeat 50% 50%/40%;
 }
 
 hr {
@@ -587,9 +626,10 @@ hr {
   align-items: flex-end;
   display: none;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   order: 0;
   position: relative;
+  max-width: 100rem;
   width: 100%;
 }
 
@@ -597,33 +637,26 @@ hr {
 
 .data-graphic aside {
   align-items: center; 
-  /* background-color: white; */
   display: flex;
   flex-flow: column;
-  margin: 1rem 2rem 2rem 2rem;
-  /* position: relative; */
-  /* min-width: 10rem; */
-  /* max-width: 50%; */
-  /* min-width: 50%; */
+  margin: 1rem 0.5rem 2rem 0.5rem;
 }
-/* TODO: Add Pie Graph SVGs */
+
 /* Pie Graphs */
 
 .pie-graph {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  /* max-width: 20rem; */
   width: 100%;
 }
 
 .pie-graph-btn {
-  margin: 3rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 .pie-graph div {
   align-items: center;
-  /* background-color: #8f9aad64; */
   border-radius: 50%;
   display: flex;
   height: 7.8rem;
@@ -636,7 +669,6 @@ hr {
 .pie-graph section {
   align-items: center;
   background-color: #EAF0F5;
-  /* border-radius: 50%; */
   display: flex;
   flex-direction: column;
   height: 7rem;
@@ -890,12 +922,14 @@ hr {
 
 .job-summary p {
   font-size: 0.8rem;
-  max-height: 5rem;
+  max-height: 5.5rem;
   overflow-y: scroll;
 }
 
 /* job description header */
-
+.sum-header {
+  flex-flow: row !important;
+}
 .sum-header h3 {
   color: #fff;
   margin: 0.4rem 0;
@@ -943,7 +977,7 @@ hr {
 .page-footer-container {
   display: flex;
   flex-flow: row wrap;
-  flex: 1;
+  flex: 0.5 1;
   height: auto;
   justify-content: center;
   margin: 0.5rem auto 2rem auto;
@@ -1035,10 +1069,12 @@ hr {
 }
 
 /** DATA-GRAPHIC DROPDOWN **/
+
 /* contains the graphic content and checkbox input */
 .drop-down-graph-container {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
   margin: 1rem 0;
   width: 100%;
 }
@@ -1066,14 +1102,17 @@ hr {
 
 /* new checkbox style */
 .show-more-checkmark {
-  background: #fff url(images/chevron-arrow-down.png) no-repeat 49% 48%/43% 43%;
+  background: #fff url(images/chevron-arrow-down.png) no-repeat 54% 55%/43%;
   border-radius: 50%;
+  border: 0.09rem solid rgba(137, 140, 148, 0.235);
   display: flex;
+  align-self: flex-end;
   height: 1.2rem;
   padding: 0 0.5rem;
   width: 1.2rem;
   z-index: 5;
 }
+
 .show-more-checkmark:after {
   content: "";
   position: absolute;
@@ -1095,8 +1134,10 @@ hr {
 }
 
 .show-more-container input:checked ~ .show-more-checkmark {
-  background: #fff url(images/chevron-arrow-up.png) no-repeat 49.5% 55%/43% 43%;
+  background: #fff url(images/chevron-arrow-up.png) no-repeat 49.5% 54%/43%;
   border-radius: 50%;
+  display: flex;
+  align-self: flex-end;
   margin: 0 0 0 1.05rem;
   width: 1.2rem;
   height: 1.2rem;
@@ -1123,11 +1164,11 @@ hr {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .pie-graph-container {
-  margin: 1rem;
+  margin: 0.5rem;
   position: relative;
 }
 
@@ -1148,7 +1189,7 @@ hr {
 
 .single-chart p, 
 h4 {
-  color: #2f384a;
+  color: #465168da;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
@@ -1185,6 +1226,7 @@ h4 {
 
 .purple {stroke: #b06ab0;}
 
+
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 400px) {
@@ -1192,7 +1234,7 @@ h4 {
     padding: 1.4rem 0;
   }
   .job-summary {
-    margin: 1rem 0;
+    margin: 1rem auto;
   }
   .job-summary section {
     flex-flow: row;
@@ -1206,18 +1248,14 @@ h4 {
   .header-tabs-condensed {
     display: none;
   }
-  .header-tabs {
+  .header-tabs-container {
     display: flex;
-    justify-content: space-around;
-    padding-right: 1rem;
-    max-width: 90%;
-    min-width: 32rem;
   }
 }
 
 @media only screen and (min-width: 650px) {
   .job-summary {
-    margin: 0.5rem 2rem 2rem 2rem;
+    margin: 0.5rem auto 2rem auto;
     min-width: 55%;
     max-width: 85%;
   }
@@ -1227,15 +1265,20 @@ h4 {
   .side-bar {
     display: flex;
   }
-  
+  .blue-arrow {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 801px) {
-  .header-tabs-condensed {
+  .header-tabs-container{
     display: none;
   }
   .header-tabs {
     display: flex;
+  }
+  .job-summary {
+    margin: 0.5rem 2rem 2rem 2rem;
   }
 }
 
@@ -1243,20 +1286,23 @@ h4 {
   .show-more-container input:checked~.data-graphic {
     display: none;
   }
+
   .data-graphic {
     display: flex;
   }
+
   .show-more-checkmark {
-    background: #fff url(images/chevron-arrow-up.png) no-repeat 49.5% 55%/43% 43%;
+    background: #fff url(images/chevron-arrow-up.png) no-repeat 54.9% 55%/43%;
+  
   }
   .show-more-container input:checked~.show-more-checkmark {
-    background: #fff url(images/chevron-arrow-down.png) no-repeat 49% 48%/43% 43%;
-    border-radius: 50%;
-    margin: 0 0 0 1.05rem;
-    width: 1.2rem;
-    height: 1.2rem;
+    background: #fff url(images/chevron-arrow-down.png) no-repeat 54.9% 55%/43%;
   }
+
   .line {
     bottom: 0;
+  }
+  .header-tabs {
+    max-width: 65%;
   }
 }
