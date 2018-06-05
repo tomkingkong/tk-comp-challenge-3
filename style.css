@@ -1,9 +1,5 @@
 /* CONTAINS EVERYTHING */
 
-body {
-  /* background-color: red; */
-}
-
 .container {
   align-content: flex-start;
   color: rgb(115, 123, 136);
@@ -24,7 +20,7 @@ button:hover {
   filter: brightness(80%);
 }
 
-/* SHOW LEFT SIDE BAR */
+/* SHOW LEFT SIDE BAR -- HOVER */
 .show-side-bar {
   background-color: transparent;
   cursor: pointer;
@@ -53,6 +49,8 @@ button:hover {
   width: 10rem;
 }
 
+/* LEFT SIDE BAR -- Buttons */
+
 .side-bar button {
   color: #8f9aad;
   font-size: 0.7rem;
@@ -69,7 +67,7 @@ button:hover {
   color: #fff;
 }
 
-/* Side Bar SECTIONS */
+/* LEFT SIDE BAR -- Sections */
 
 .l-aside {
   color: #8f9aad;
@@ -85,19 +83,18 @@ h5 {
   margin: 0.5rem 0.8rem;
 }
 
-/* Profile */
+/*LEFT SIDE BAR -- Profile */
 
 .profile-photo {
   margin: 1rem auto;
   text-align: center;
 }
 
-/* photo */
+/* Profile Photo */
 
 .profile-photo aside {
   background: url(images/ezgif.com-crop.jpg) no-repeat 20% 0%/140%;
   border-radius: 50%;
-  
   margin: 0.5rem auto;
   height: 5rem;
   width: 5rem;
@@ -211,11 +208,15 @@ h5 {
   text-indent: 1.3rem;
 }
 
+/* CHECKBOX BUTTONS -- Hidden Checkbox Input */
+
 .check-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
+
+/* CHECKBOX BUTTONS -- Custom Checkmark */
 
 .checkmark {
   position: absolute;
@@ -224,21 +225,18 @@ h5 {
   width: 0.7rem;
 }
 
-.yellow {
-  background-color: #f2e70c;
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
 }
 
-.blue {
-  background-color: #29b0fa;
-}
+/* CHECKBOX BUTTONS -- Checkbox Colors! */
 
-.red {
-  background-color: #ee145e;
-}
-
-.green {
-  background-color: #00af8b;
-}
+.yellow {background-color: #f2e70c;}
+.blue {background-color: #29b0fa;}
+.red {background-color: #ee145e;}
+.green {background-color: #00af8b;}
 
 .check-container:hover input~.checkmark {
   filter: brightness(50%);
@@ -246,12 +244,6 @@ h5 {
 
 .check-container input:checked~.checkmark {
   filter: brightness(130%);
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
 }
 
 .check-container input:checked~.checkmark:after {
@@ -303,7 +295,7 @@ h5 {
   width: 100%;
 }
 
-/* all nav buttons in header */
+/* HEADER -- NAV BUTTONS */
 
 .header-nav button {
   border-left: 0.09rem solid rgba(137, 140, 148, 0.235);
@@ -320,8 +312,7 @@ h5 {
   background-color: #129AF9;
 }
 
-/* TODO: Update Burger Button with Left Chevron */
-/* Burger Nav Button */
+/* NAV BUTTONS -- Burger Nav Button */
 
 .side-bar-burger {
   background: url(images/026-menu-1.svg) no-repeat center/1rem;
@@ -340,7 +331,7 @@ h5 {
   width: 0.8rem;
 }
 
-/* Profile Button */
+/* NAV BUTTONS -- Profile Button */
 
 .profile-btn {
   background: url(images/018-user.svg) no-repeat center/1.2rem;
@@ -350,7 +341,7 @@ h5 {
   background: url(images/018-user-white.svg) no-repeat center/1.2rem;
 }
 
-/* Calendar Button */
+/* NAV BUTTONS -- Calendar Button */
 
 .calendar-btn {
   background: url(images/006-calendar.svg) no-repeat center/1rem;
@@ -360,7 +351,7 @@ h5 {
   background: url(images/006-calendar-white.svg) no-repeat center/1rem;
 }
 
-/* Show All Button */
+/* NAV BUTTONS -- Show All Button */
 
 .show-all-btn {
   background: url(images/023-menu.svg) no-repeat center/1rem;
@@ -370,7 +361,7 @@ h5 {
   background: url(images/023-menu-white.svg) no-repeat center/1rem;
 }
 
-/* search bar */
+/* NAV BUTTONS -- Search Bar */
 
 .search-bar {
   background: #fff url(images/search.svg) no-repeat;
@@ -395,7 +386,7 @@ label#search:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 1.8rem;
+  padding: 2rem;
 }
 
 .header-title p {
@@ -408,7 +399,7 @@ label#search:hover {
   text-decoration: none;
 }
 
-/* HEADER TITLE - NAV TOOLS */
+/* HEADER TITLE -- NAV TOOLS */
 
 .tools-nav {
   align-items: center;
@@ -416,6 +407,8 @@ label#search:hover {
   margin: 1rem 0.5rem 1.8rem 0;
   width: auto;
 }
+
+/* NAV TOOLS -- Buttons */
 
 .tools-nav button {
   border: 0.09rem solid rgba(137, 140, 148, 0.235);
@@ -431,7 +424,12 @@ label#search:hover {
   width: 1rem;
 }
 
-/* open button */
+.tools-nav button:hover {
+  filter: brightness(100%);
+  background-color: #EBF0F5;
+}
+
+/* TOOLS NAV -- Open Button */
 
 .tools-nav button:first-of-type {
   align-items: center;
@@ -450,33 +448,26 @@ label#search:hover {
   width: 0.8rem;
 }
 
-.tools-nav button:hover {
-  filter: brightness(100%);
-  background-color: #EBF0F5;
-}
-
-/* MAIN CONTENT NAV TABS */
+/* MAIN CONTENT -- NAV TABS */
 
 .header-tabs {
   align-self: flex-start;
   display: none;
   justify-content: space-between;
-  margin-left: 1rem;
-  position: relative;
+  margin-left: 2rem;
   max-width: 75%;
+  position: relative;
   width: 100%;
 }
+
+/* NAV TABS -- Individual Tabs */
 
 .header-tabs li {
   border-bottom: 0.2rem solid transparent;
   cursor: pointer;
   font-size: 0.7rem;
-  margin: 1rem 0 0 0.3rem;
+  margin: 0 0 0 0.3rem;
   padding-bottom: 1rem;
-}
-
-.header-tabs li:first-of-type {
-  margin-left: 1rem;
 }
 
 .header-tabs li:hover {
@@ -485,7 +476,7 @@ label#search:hover {
 }
 
 
-/* HEADER TABS -- TABBED */
+/* NAV TABS -- TABBED Midsize */
 
 .header-tabs-container {
   display: none;
@@ -495,9 +486,9 @@ label#search:hover {
 .header-tabs-container div {
   background-color: #fff;
   border-radius: 0.25rem 0.25rem 0 0;
-  border-top: 0.05rem solid #8f9aad;
-  border-right: 0.05rem solid #8f9aad;
-  border-left: 0.05rem solid #8f9aad;
+  border-top: 0.05rem solid rgba(137, 140, 148, 0.235);
+  border-right: 0.05rem solid rgba(137, 140, 148, 0.235);
+  border-left: 0.05rem solid rgba(137, 140, 148, 0.235);
   bottom: 0;
   cursor: pointer;
   font-size: 0.8rem;
@@ -668,9 +659,11 @@ hr {
 
 .pie-graph section {
   align-items: center;
+  color: #465168da;
   background-color: #EAF0F5;
   display: flex;
   flex-direction: column;
+  font-size: 1.5rem;
   height: 7rem;
   justify-content: center;
   text-align: center;
@@ -678,13 +671,11 @@ hr {
 }
 
 .pie-graph section h4 {
-
-  margin: 0 0 0.2rem 0;
+  margin: 0 0 0.3rem 0;
 }
 
 .pie-graph section p {
-  font-size: 0.5rem;
-  font-weight: 700;
+  font-size: 0.8rem;
 }
 
 /* TODO: Make Bar Graph Respnsive at mobile scale */
@@ -882,11 +873,11 @@ hr {
   border-radius: 0.2rem;
   flex: 1;
   max-height: 50rem;
-  width: 100%;
   min-width: 50%;
   order: 2;
   padding: 0 2rem 2rem 2rem;
   position: relative;
+  width: 100%;
 }
 
 /* Job Description background */
@@ -1031,7 +1022,6 @@ hr {
 
 .page-footer-container aside {
   border-bottom: 0.09rem solid rgba(137, 140, 148, 0.235);
-  margin: 0 auto;
   max-width: 20rem;
   min-width: 18rem;
   padding: 1.4rem 0.5rem;
@@ -1157,19 +1147,17 @@ hr {
 
 /* EXPERIMENT SVG CIRCLES */
 
+/* Contains All Pie Graphs */
+
 .flex-wrapper {
   background-color: #EBF0F5;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  margin: 0;
-}
-
-.pie-graph-container {
-  margin: 0.5rem;
   position: relative;
+  /* margin: 0; */
+  width: 100%;
 }
 
 .single-chart {
@@ -1177,23 +1165,15 @@ hr {
   display: flex;
   justify-content: center;
   text-align: center;
+  max-height: 5rem;
   min-width: 5rem;
   width: 10rem;
-  height: 10rem;
+  /* height: 10rem; */
 }
 
 .single-chart svg {
   position: absolute;
   z-index: 0;
-}
-
-.single-chart p, 
-h4 {
-  color: #465168da;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  z-index: 10;
 }
 
 .circular-chart {
@@ -1204,27 +1184,29 @@ h4 {
 .circle-bg {
   fill: none;
   stroke: #b1b5bd4b;
-  stroke-width: 3.8;
+  stroke-width: 2.5;
 }
 
 .circle {
   fill: none;
-  stroke-width: 3.5;
+  stroke-width: 2.5;
   stroke-linecap: round;
   animation: progress 0.75s ease-out forwards;
 }
+
+/* SVG Circle Color */
+
+.green {stroke: #47b9ba;}
+.blue {stroke: #17a0f5;}
+.purple {stroke: #b06ab0;}
+
+/* SVG Animation Keyframes */
 
 @keyframes progress {
   0% {
     stroke-dasharray: 0 100;
   }
 }
-
-.green {stroke: #47b9ba;}
-
-.blue {stroke: #17a0f5;}
-
-.purple {stroke: #b06ab0;}
 
 
 /* MEDIA QUERIES */
@@ -1254,10 +1236,13 @@ h4 {
 }
 
 @media only screen and (min-width: 650px) {
+  .page-footer-container {
+    margin: 0.5rem 1.8rem 2rem 1.8rem;
+  }
   .job-summary {
     margin: 0.5rem auto 2rem auto;
     min-width: 55%;
-    max-width: 85%;
+    max-width: 80%;
   }
   .show-side-bar {
     display: none;
