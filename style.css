@@ -420,7 +420,7 @@ label#search:hover {
   width: 0.8rem;
 }
 
-/* MAIN PAGE -- HEADER -- TABS */
+/* MAIN PAGE -- HEADER -- CONTAINER */
 
 .header-tabs {
   align-self: flex-start;
@@ -432,7 +432,7 @@ label#search:hover {
   width: 100%;
 }
 
-/* MAIN PAGE -- HEADER -- TABS -- Individual Tabs */
+/* MAIN PAGE -- HEADER -- TABS */
 
 .header-tabs li {
   border-bottom: 0.2rem solid transparent;
@@ -448,12 +448,14 @@ label#search:hover {
 }
 
 
-/* MAIN PAGE -- HEADER -- TABS -- TABBED Midsize */
+/* MAIN PAGE -- HEADER -- TABS -- TABBED CONTAINER */
 
 .header-tabs-container {
   display: none;
   position: relative;
 }
+
+/* MAIN PAGE -- HEADER -- TABS -- TABBED - CONTAINERS */
 
 .header-tabs-container div {
   background-color: #fff;
@@ -471,13 +473,15 @@ label#search:hover {
   position: absolute;
   text-align: right;
   width: auto;
-
 }
+
 .header-tabs-container div:hover {
   background-color: #68C0F5;
   color: #fff;
   z-index: 100;
 }
+
+/* MAIN PAGE -- HEADER -- TABS -- TABBED - CONTAINERS - CUSTOM POSITION */
 
 .tab-summary {z-index: 10;}
 .tab-applicants {left: 2rem; z-index: 9;}
@@ -505,6 +509,8 @@ label#search:hover {
   height: 2rem;
   z-index: 7;
 }
+
+/* MAIN PAGE -- HEADER -- TABS -- CONDENSED  - HOVER REVEAL TABS MENU*/
 
 .header-tabs-condensed:hover ~ .header-tabs {
   background-color: #EBF0F5;
@@ -541,594 +547,10 @@ label#search:hover {
   width: 100%;
 }
 
-/* SHOW DATA GRAPHS BUTTON */
+/** MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- DROPDOWN **/
 
-.show-more {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  order: 1;
-  height: 3rem;
-  padding: 0 2rem;
-  width: 100%;
-}
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPHS -- CONTAINER FOR ALL GRAPHS */
 
-.show-more button {
-  border: 0.09rem solid rgba(137, 140, 148, 0.235);
-  border-radius: 50%;
-  margin: 0 0.2rem;
-  height: 1.5rem;
-  width: 3rem;
-}
-
-/* REMOVE DATA GRAPH */
-
-.show-more-data {
-  background: rgb(250, 249, 247) url(images/chevron-arrow-up.png) no-repeat 50% 50%/40%;
-}
-
-.show-more:active~.data-graphic {
-  display: none;
-}
-
-.show-more-data:active {
-  background: rgb(250, 249, 247) url(images/chevron-arrow-down.png) no-repeat 50% 50%/40%;
-}
-
-hr {
-  background-color: #b9bfc4;
-  border: 0;
-  height: 0.064rem;
-}
-
-/* DATA GRAPHS */
-
-/* DATA GRAPHS -- CONTAINER */
-
-.data-graphic {
-  align-items: flex-end;
-  display: none;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  order: 0;
-  position: relative;
-  max-width: 100rem;
-  width: 100%;
-}
-
-/* DATA GRAPHS -- BUTTONS */
-
-.data-graphic button {
-  background-color: #FAF9F7;
-  border: 0.09rem solid rgba(137, 140, 148, 0.235);
-  border-radius: 2rem;
-  font-size: 0.6rem;
-  height: 1.5rem;
-  padding: 0 1rem;
-  width: auto;
-}
-
-/* DATA GRAPHS -- INDIVIDUAL CONTAINERS */
-
-.data-graphic aside {
-  align-items: center; 
-  display: flex;
-  flex-flow: column;
-  margin: 1rem 0.5rem 2rem 0.5rem;
-}
-
-/* PIE GRAPHS */
-
-/* PIE GRAPHS -- CONTAINER */
-
-.pie-graph {
-  background-color: #EBF0F5;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-}
-
-/* PIE GRAPHS -- BUTTON */
-
-.pie-graph-btn {
-  margin: 1.5rem 0 0 0;
-}
-
-/* PIE GRAPHS -- DATA */
-
-.pie-graph section {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.5rem;
-  height: 7rem;
-  justify-content: center;
-  text-align: center;
-  width: 7rem;
-}
-
-/* PIE GRAPHS -- DATA -- NUMBER */
-
-.pie-graph section h4 {
-  margin: 0 0 0.3rem 0;
-}
-
-/* PIE GRAPHS -- DATA -- TEXT */
-
-.pie-graph section p {
-  font-size: 0.8rem;
-}
-
-/* PIE GRAPHS -- CIRCLE CONTAINERS */
-
-.single-chart {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  max-height: 8rem;
-  min-width: 8rem;
-  width: 10rem;
-}
-
-/* PIE GRAPHS -- CIRCLE SVGs */
-
-.single-chart svg {
-  position: absolute;
-  z-index: 0;
-}
-
-.single-chart svg:hover {
-  filter: brightness(85%);
-  transition: all 0.25s;
-}
-
-/* PIE GRAPHS -- CIRCLE SVG --CONTAINERS */
-
-.circular-chart {
-  width: 10rem;
-  height: 8.4rem;
-}
-
-/* PIE GRAPHS -- SVG -- BACKGROUND CIRCLE */
-
-.circle-bg {
-  fill: none;
-  stroke: #b1b5bd4b;
-  stroke-width: 2.5;
-}
-
-/* PIE GRAPHS -- SVG -- PRIMARY CIRCLE */
-
-.circle {
-  fill: none;
-  stroke-width: 2.5;
-  stroke-linecap: round;
-  animation: progress 0.75s ease-out forwards;
-}
-
-/* PIE GRAPHS -- SVG PRIMARY CIRCLE -- COLOR */
-
-.green {stroke: #47b9ba;}
-.blue {stroke: #17a0f5;}
-.purple {stroke: #b06ab0;}
-
-/* SVG ANIMATION KEYFRAMES */
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-
-
-/* TODO: Make Bar Graph Respnsive at mobile scale */
-
-/* .bar-graph-container {
-  transform: rotate(90deg);
-}
-
-.day-horizontal p{
-  transform: rotate(-90deg);
-}
-
-.num-vertical p {
-  transform: rotate(-90deg);
-} */
-
-/* BAR GRAPH */
-
-/* BAR GRAPH -- PARENT CONTAINER */
-
-.bar-graph {
-  display: flex;
-  flex-flow: row;
-  font-size: 0.6rem;
-  justify-content: center;
-  text-align: right;
-  position: relative;
-  min-width: 10rem;
-  width: 100%;
-}
-
-/* BAR GRAPH -- CONTAINERS */
-
-.bar-graph .bar-container {
-  position: relative;
-}
-
-/* BAR GRAPH -- COLUMNS -- BACKGROUND */
-
-.bar-graph div {
-  background-color: #b9bfc43f;
-  border-radius: 0.1rem;
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-end;
-  height: 10rem;
-  margin: 0 0 0.5rem 0.8rem;
-  min-width: 1rem;
-  position: relative;
-  transition: all 0.15s linear;
-}
-
-.bar-graph div:hover {
-  filter: brightness(85%);
-}
-
-/* Display POPUP */
-
-.bar-graph div:hover ~ .popup {
-  display: block;
-}
-
-/* BAR GRAPH -- COLUMNS -- FILL */
-
-.bar-graph section {
-  background-color: #45b9c1;
-  border-radius: 0.1rem;
-  cursor: pointer;
-  margin: 0 auto;
-  order: 0;
-  padding: 0;
-  position: relative;
-  width: 100%;
-  z-index: 10;
-}
-
-/* BAR GRAPH -- COLUMNS -- FILL LEVELS */
-
-.col1 {height: 10%;}
-.col2 {height: 50%;}
-.col3 {height: 60%;}
-.col4 {height: 75%;}
-.col5 {height: 40%;}
-.col6 {height: 50%;}
-.col7 {height: 30%;}
-.col8 {height: 10%;}
-.col9 {height: 75%;}
-.col10 {height: 85%;}
-.col11 {height: 60%;}
-.col12 {height: 40%;}
-.col13 {height: 30%;}
-.col14 {height: 20%;}
-
-/* BAR GRAPH -- COLUMNS -- AMOUNTS */
-
-.num-vertical {
-  background-color: transparent !important;
-  color: #2f384a;
-  justify-content: space-between !important;
-  margin: 0 !important;
-}
-
-/* BAR GRAPH -- COLUMNS -- DAYS */
-
-.day-horizontal {
-  background-color: transparent;
-  color: #2f384a;
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: row;
-  height: 1rem;
-  margin: 0 0 1rem 1.7rem;
-}
-
-.day-horizontal p {
-  font-size: 0.8rem;
-  font-weight: 700;
-  margin: 0 0.635rem;
-}
-
-/* BAR GRAPH -- POP UP */
-
-.popup {
-  background-color: #364051;
-  border-radius: 0.2rem;
-  bottom: 8rem;
-  color: #fff;
-  display: none;
-  height: 3rem;
-  right: -4.5rem;
-  order: 1;
-  padding: 0.5rem 0;
-  position: absolute;
-  text-align: center;
-  width: 10rem;
-  z-index: 1000 !important;
-}
-
-/* BAR GRAPH -- POP UP -- NUMBERS */
-
-.popup .applicant-num{
-  color: #00af8b;
-}
-
-.popup .interview-num{
-  color: #129AF9;
-}
-
-/* BAR GRAPH -- POP UP -- ARROW DIV */
-
-.bottom-arrow {
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 2rem;
-  left: 4.3rem;
-  background-color: #364051;
-  transform: rotate(45deg);
-  z-index: -1;
-}
-
-/* BAR GRAPH -- POP UP -- INDIVIDUAL DISPLAY HEIGHTS */
-
-.p1 {bottom: 2.2rem;}
-.p2 {bottom: 6.2rem;}
-.p3 {bottom: 7.2rem;}
-.p4 {bottom: 8.8rem;}
-.p5 {bottom: 5.2rem;}
-.p6 {bottom: 6.2rem;}
-.p7 {bottom: 4.2rem;}
-.p8 {bottom: 2.2rem;}
-.p9 {bottom: 8.8rem;}
-.p10 {bottom: 9.8rem;}
-.p11 {bottom: 7.2rem;}
-.p12 {bottom: 5.2rem;}
-.p13 {bottom: 4.2rem;}
-.p14 {bottom: 3.2rem;}
-
-/* BOTTOM HALF OF PAGE -- JOB SUMMARY -- FOOTER */
-
-.bottom-half-page {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  order: 3;
-  width: 100%;
-}
-
-/* JOB SUMMARY */
-
-/* JOB SUMMARY --  CONTAINER */
-
-.job-summary {
-  background-color: #FAF9F7;
-  box-shadow: 0 2px 3px rgb(208, 213, 218);
-  border-radius: 0.2rem;
-  flex: 1;
-  max-height: 50rem;
-  min-width: 50%;
-  order: 2;
-  padding: 0 2rem 2rem 2rem;
-  position: relative;
-  width: 100%;
-}
-
-/* JOB SUMMARY -- DESCRIPTION BACKGROUND */
-
-.job-summary div {
-  background-color: #64738A;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 4.3rem;
-  width: 100%;
-  z-index: 0;
-}
-
-/* JOB SUMMARY -- SECTIONS */
-
-.job-summary section {
-  align-items: flex-start;
-  display: flex;
-  flex-flow: column;
-  font-size: 0.7rem;
-  padding: 1.4rem 0;
-  width: 100%;
-}
-
-/* JOB SUMMARY -- TITLES */
-
-.job-summary h3 {
-  margin: 0 0 0.4rem 0;
-  min-width: 9rem;
-}
-
-/* JOB SUMMARY -- INFO TEXT */
-
-.job-summary p {
-  font-size: 0.8rem;
-  max-height: 5.5rem;
-  overflow-y: scroll;
-}
-
-/* JOB SUMMARY -- DESCRIPTION HEADER */
-
-.sum-header {
-  flex-flow: row !important;
-}
-
-/* JOB SUMMARY -- DESCRIPTION HEADER TITLE */
-
-.sum-header h3 {
-  color: #fff;
-  margin: 0.4rem 0;
-  z-index: 1;
-}
-
-/* JOB SUMMARY -- DESCRIPTION HEADER -- EDIT BUTTON */
-
-.sum-header .edit-btn {
-  background: #7c8ca6 url(images/017-feather-and-ink-bottle-white.svg) no-repeat 13% 40%/20%;
-  border-radius: 0.2rem;
-  color: #fff;
-  display: flex;
-  height: 1.5rem;
-  margin: auto 0;
-  text-indent: 1.8rem;
-  width: 4rem;
-  z-index: 2;
-}
-
-/* JOB SUMMARY -- DESCRIPTION HEADER -- SHARE BUTTON */
-
-.share-btn {
-  background: #7c8ca6 url(images/024-share-white.svg) no-repeat center/1.2rem;
-  border-radius: 0.2rem;
-  color: #fff;
-  display: flex;
-  height: 2.3rem;
-  margin: -1% 75%;
-  position: absolute;
-  width: 2.3rem;
-  z-index: 2;
-}
-
-/* JOB SUMMARY -- HIRING LEAD PICTURE */
-
-.sum-hiring-lead aside {
-  background: url(images/ezgif.com-crop.jpg) no-repeat 20% 0%/140%;
-  border-radius: 50%;
-  margin: -0.5rem 0.4rem auto 0;
-  height: 2rem;
-  width: 2rem;
-}
-
-/* FOOTER */
-
-/* FOOTER -- CONTAINER */
-
-.page-footer-container {
-  display: flex;
-  flex-flow: row wrap;
-  flex: 0.5 1;
-  height: auto;
-  justify-content: center;
-  margin: 0.5rem auto 2rem auto;
-  padding: 0 0.5rem;
-  order: 3;
-  width: 100%;
-}
-
-/* FOOTER -- CONTAINERS */
-
-.page-footer-container aside {
-  border-bottom: 0.09rem solid rgba(137, 140, 148, 0.235);
-  max-width: 20rem;
-  min-width: 18rem;
-  padding: 1.4rem 0.5rem;
-}
-
-/* FOOTER -- ICONS */
-
-.footer-aside img {
-  width: 0.9rem;
-}
-
-/* FOOTER -- BODY TEXT */
-
-.footer-aside p {
-  font-size: 0.8rem;
-  margin: 1rem 0;
-}
-
-/* FOOTER -- INPUTS */
-
-.footer-aside input {
-  border: 0;
-  font-size: 0.8rem;
-  height: 2rem;
-  text-indent: 0.4rem;
-  width: 80%;
-}
-
-/* Custom Input For Resume */
-
-.upload-resume input {
-  width: 100%;
-}
-
-/* FOOTER -- BUTTONS */
-
-.footer-aside button {
-  background-color: #3db4be;
-  height: 2rem;
-  width: 20%;
-}
-
-/* FOOTER -- BUTTON - TEXT COLOR */
-
-.page-footer-container button {
-  color: #fff;
-}
-
-/* FOOTER -- MEDIA BUTTONS -- CONTAINER */
-
-.media-btns {
-  display: flex;
-  flex-flow: column;
-  font-size: 0.8rem;
-  justify-content: space-between;
-  height: 11rem;
-  margin: 0 auto;
-  max-width: 20rem;
-  min-width: 20rem;
-}
-
-/* FOOTER -- MEDIA BUTTONS -- BUTTONS */
-
-.media-btns button {
-  border-radius: 0.1rem;
-  height: 2.8rem;
-  width: 100%;
-}
-
-/* FOOTER -- MEDIA BUTTONS -- FACEBOOK */
-
-.facebook {
-  background: #475993 url(images/facebook-logo.svg) no-repeat 0.8rem 1rem/1rem;
-}
-
-/* FOOTER -- MEDIA BUTTONS -- TWITTER */
-
-.twitter {
-  background: #49A9E9 url(images/013-twitter.svg) no-repeat 0.8rem 1rem/1rem;
-}
-
-/* FOOTER -- MEDIA BUTTONS -- LINKEDIN */
-
-.linkedin {
-  background: #3680B7 url(images/010-linkedin.svg) no-repeat 0.8rem 1rem/1rem;
-}
-
-/** DATA-GRAPHIC DROPDOWN **/
-
-/* contains the graphic content and checkbox input */
 .drop-down-graph-container {
   display: flex;
   flex-flow: column nowrap;
@@ -1137,7 +559,8 @@ hr {
   width: 100%;
 }
 
-/* label containing the content, input, and replacement checkbox styling*/
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- LABEL CONTAINER */
+
 .show-more-container {
   cursor: pointer;
   display: flex;
@@ -1211,44 +634,614 @@ hr {
   bottom: 0;
 }
 
-/* MEDIA QUERIES */
+.show-more-data {
+  background: rgb(250, 249, 247) url(images/chevron-arrow-up.png) no-repeat 50% 50%/40%;
+}
+
+.show-more:active~.data-graphic {
+  display: none;
+}
+
+.show-more-data:active {
+  background: rgb(250, 249, 247) url(images/chevron-arrow-down.png) no-repeat 50% 50%/40%;
+}
+
+hr {
+  background-color: #b9bfc4;
+  border: 0;
+  height: 0.064rem;
+}
+
+/** MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- DATA GRAPHS **/
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- DATA GRAPHS -- CONTAINER */
+
+.data-graphic {
+  align-items: flex-end;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  order: 0;
+  position: relative;
+  max-width: 100rem;
+  width: 100%;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- DATA GRAPHS -- BUTTONS */
+
+.data-graphic button {
+  background-color: #FAF9F7;
+  border: 0.09rem solid rgba(137, 140, 148, 0.235);
+  border-radius: 2rem;
+  font-size: 0.6rem;
+  height: 1.5rem;
+  padding: 0 1rem;
+  width: auto;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- DATA GRAPHS -- INDIVIDUAL CONTAINERS */
+
+.data-graphic aside {
+  align-items: center; 
+  display: flex;
+  flex-flow: column;
+  margin: 1rem 0.5rem 2rem 0.5rem;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- PIE GRAPHS */
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- PIE GRAPHS -- CONTAINER */
+
+.pie-graph {
+  background-color: #EBF0F5;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- PIE GRAPHS -- BUTTON */
+
+.pie-graph-btn {
+  margin: 1.5rem 0 0 0;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- PIE GRAPHS -- DATA */
+
+.pie-graph section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  height: 7rem;
+  justify-content: center;
+  text-align: center;
+  width: 7rem;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- PIE GRAPHS -- DATA -- NUMBER */
+
+.pie-graph section h4 {
+  margin: 0 0 0.3rem 0;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- PIE GRAPHS -- DATA -- TEXT */
+
+.pie-graph section p {
+  font-size: 0.8rem;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- PIE GRAPHS -- CIRCLE CONTAINERS */
+
+.single-chart {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-height: 8rem;
+  min-width: 8rem;
+  width: 10rem;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- PIE GRAPHS -- CIRCLE SVGs */
+
+.single-chart svg {
+  position: absolute;
+  z-index: 0;
+}
+
+.single-chart svg:hover {
+  filter: brightness(85%);
+  transition: all 0.25s;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- PIE GRAPHS -- CIRCLE SVG --CONTAINERS */
+
+.circular-chart {
+  width: 10rem;
+  height: 8.4rem;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- PIE GRAPHS -- SVG -- BACKGROUND CIRCLE */
+
+.circle-bg {
+  fill: none;
+  stroke: #b1b5bd4b;
+  stroke-width: 2.5;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- PIE GRAPHS -- SVG -- PRIMARY CIRCLE */
+
+.circle {
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  animation: progress 0.75s ease-out forwards;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- PIE GRAPHS -- SVG PRIMARY CIRCLE -- COLOR */
+
+.green {stroke: #47b9ba;}
+.blue {stroke: #17a0f5;}
+.purple {stroke: #b06ab0;}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- PIE GRAPHS -- SVG ANIMATION KEYFRAMES */
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+
+/* TODO: Make Bar Graph Respnsive at mobile scale */
+
+/* .bar-graph-container {
+  transform: rotate(90deg);
+}
+
+.day-horizontal p{
+  transform: rotate(-90deg);
+}
+
+.num-vertical p {
+  transform: rotate(-90deg);
+} */
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH */
+
+/*MAIN CONTENT BODY -- TOGGLE DATA GRAPH --  BAR GRAPH -- PARENT CONTAINER */
+
+.bar-graph {
+  display: flex;
+  flex-flow: row;
+  font-size: 0.6rem;
+  justify-content: center;
+  text-align: right;
+  position: relative;
+  min-width: 10rem;
+  width: 100%;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- CONTAINERS */
+
+.bar-graph .bar-container {
+  position: relative;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- COLUMNS -- BACKGROUND */
+
+.bar-graph div {
+  background-color: #b9bfc43f;
+  border-radius: 0.1rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  height: 10rem;
+  margin: 0 0 0.5rem 0.8rem;
+  min-width: 1rem;
+  position: relative;
+  transition: all 0.15s linear;
+}
+
+.bar-graph div:hover {
+  filter: brightness(85%);
+}
+
+/* Display POPUP */
+
+.bar-graph div:hover ~ .popup {
+  display: block;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- COLUMNS -- FILL */
+
+.bar-graph section {
+  background-color: #45b9c1;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  margin: 0 auto;
+  order: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- COLUMNS -- FILL LEVELS */
+
+.col1 {height: 10%;}
+.col2 {height: 50%;}
+.col3 {height: 60%;}
+.col4 {height: 75%;}
+.col5 {height: 40%;}
+.col6 {height: 50%;}
+.col7 {height: 30%;}
+.col8 {height: 10%;}
+.col9 {height: 75%;}
+.col10 {height: 85%;}
+.col11 {height: 60%;}
+.col12 {height: 40%;}
+.col13 {height: 30%;}
+.col14 {height: 20%;}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- COLUMNS -- AMOUNTS */
+
+.num-vertical {
+  background-color: transparent !important;
+  color: #2f384a;
+  justify-content: space-between !important;
+  margin: 0 !important;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- COLUMNS -- DAYS */
+
+.day-horizontal {
+  background-color: transparent;
+  color: #2f384a;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row;
+  height: 1rem;
+  margin: 0 0 1rem 1.7rem;
+}
+
+.day-horizontal p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 0.635rem;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- POP UP */
+
+.popup {
+  background-color: #364051;
+  border-radius: 0.2rem;
+  bottom: 8rem;
+  color: #fff;
+  display: none;
+  height: 3rem;
+  right: -4.5rem;
+  order: 1;
+  padding: 0.5rem 0;
+  position: absolute;
+  text-align: center;
+  width: 10rem;
+  z-index: 1000 !important;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- POP UP -- NUMBERS */
+
+.popup .applicant-num{
+  color: #00af8b;
+}
+
+.popup .interview-num{
+  color: #129AF9;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- POP UP -- ARROW DIV */
+
+.bottom-arrow {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 2rem;
+  left: 4.3rem;
+  background-color: #364051;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- POP UP -- INDIVIDUAL DISPLAY HEIGHTS */
+
+.p1 {bottom: 2.2rem;}
+.p2 {bottom: 6.2rem;}
+.p3 {bottom: 7.2rem;}
+.p4 {bottom: 8.8rem;}
+.p5 {bottom: 5.2rem;}
+.p6 {bottom: 6.2rem;}
+.p7 {bottom: 4.2rem;}
+.p8 {bottom: 2.2rem;}
+.p9 {bottom: 8.8rem;}
+.p10 {bottom: 9.8rem;}
+.p11 {bottom: 7.2rem;}
+.p12 {bottom: 5.2rem;}
+.p13 {bottom: 4.2rem;}
+.p14 {bottom: 3.2rem;}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE */
+
+.bottom-half-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  order: 3;
+  width: 100%;
+}
+
+/** MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY **/
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY --  CONTAINER */
+
+.job-summary {
+  background-color: #FAF9F7;
+  box-shadow: 0 2px 3px rgb(208, 213, 218);
+  border-radius: 0.2rem;
+  flex: 1;
+  max-height: 50rem;
+  min-width: 50%;
+  order: 2;
+  padding: 0 2rem 2rem 2rem;
+  position: relative;
+  width: 100%;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- DESCRIPTION BACKGROUND */
+
+.job-summary div {
+  background-color: #64738A;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4.3rem;
+  width: 100%;
+  z-index: 0;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- SECTIONS */
+
+.job-summary section {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column;
+  font-size: 0.7rem;
+  padding: 1.4rem 0;
+  width: 100%;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- TITLES */
+
+.job-summary h3 {
+  margin: 0 0 0.4rem 0;
+  min-width: 9rem;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- INFO TEXT */
+
+.job-summary p {
+  font-size: 0.8rem;
+  max-height: 5.5rem;
+  overflow-y: scroll;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- DESCRIPTION HEADER */
+
+.sum-header {
+  flex-flow: row !important;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- DESCRIPTION HEADER TITLE */
+
+.sum-header h3 {
+  color: #fff;
+  margin: 0.4rem 0;
+  z-index: 1;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- DESCRIPTION HEADER -- EDIT BUTTON */
+
+.sum-header .edit-btn {
+  background: #7c8ca6 url(images/017-feather-and-ink-bottle-white.svg) no-repeat 13% 40%/20%;
+  border-radius: 0.2rem;
+  color: #fff;
+  display: flex;
+  height: 1.5rem;
+  margin: auto 0;
+  text-indent: 1.8rem;
+  width: 4rem;
+  z-index: 2;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- DESCRIPTION HEADER -- SHARE BUTTON */
+
+.share-btn {
+  background: #7c8ca6 url(images/024-share-white.svg) no-repeat center/1.2rem;
+  border-radius: 0.2rem;
+  color: #fff;
+  display: flex;
+  height: 2.3rem;
+  margin: -1% 75%;
+  position: absolute;
+  width: 2.3rem;
+  z-index: 2;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- HIRING LEAD PICTURE */
+
+.sum-hiring-lead aside {
+  background: url(images/ezgif.com-crop.jpg) no-repeat 20% 0%/140%;
+  border-radius: 50%;
+  margin: -0.5rem 0.4rem auto 0;
+  height: 2rem;
+  width: 2rem;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER */
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER -- CONTAINER */
+
+.page-footer-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0.5 1;
+  height: auto;
+  justify-content: center;
+  margin: 0.5rem auto 2rem auto;
+  padding: 0 0.5rem;
+  order: 3;
+  width: 100%;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER -- CONTAINERS */
+
+.page-footer-container aside {
+  border-bottom: 0.09rem solid rgba(137, 140, 148, 0.235);
+  max-width: 20rem;
+  min-width: 18rem;
+  padding: 1.4rem 0.5rem;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER -- ICONS */
+
+.footer-aside img {
+  width: 0.9rem;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER -- BODY TEXT */
+
+.footer-aside p {
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER -- INPUTS */
+
+.footer-aside input {
+  border: 0;
+  font-size: 0.8rem;
+  height: 2rem;
+  text-indent: 0.4rem;
+  width: 80%;
+}
+
+/* Custom Input For Resume */
+
+.upload-resume input {
+  width: 100%;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER -- BUTTONS */
+
+.footer-aside button {
+  background-color: #3db4be;
+  height: 2rem;
+  width: 20%;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER -- BUTTON - TEXT COLOR */
+
+.page-footer-container button {
+  color: #fff;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER -- MEDIA BUTTONS -- CONTAINER */
+
+.media-btns {
+  display: flex;
+  flex-flow: column;
+  font-size: 0.8rem;
+  justify-content: space-between;
+  height: 11rem;
+  margin: 0 auto;
+  max-width: 20rem;
+  min-width: 20rem;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER -- MEDIA BUTTONS -- BUTTONS */
+
+.media-btns button {
+  border-radius: 0.1rem;
+  height: 2.8rem;
+  width: 100%;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER -- MEDIA BUTTONS -- FACEBOOK */
+
+.facebook {
+  background: #475993 url(images/facebook-logo.svg) no-repeat 0.8rem 1rem/1rem;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER -- MEDIA BUTTONS -- TWITTER */
+
+.twitter {
+  background: #49A9E9 url(images/013-twitter.svg) no-repeat 0.8rem 1rem/1rem;
+}
+
+/* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER -- MEDIA BUTTONS -- LINKEDIN */
+
+.linkedin {
+  background: #3680B7 url(images/010-linkedin.svg) no-repeat 0.8rem 1rem/1rem;
+}
+
+/*** MEDIA QUERIES ***/
 
 @media only screen and (min-width: 400px) {
 
-  /* Update Padding on Footer to avoid Collision */
+  /* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER -- Update Padding to avoid Collision */
+  
   .page-footer-container aside {
     padding: 1.4rem 0;
   }
 
-  /* Update Margins on Job Summary to avoid collision */
+  /* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- Update Margins to avoid collision */
+  
   .job-summary {
     margin: 1rem auto;
   }
 
-  /* Convert Job Summary Sections to Rows for Desktop View */
+  /* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- Convert to Rows for Desktop View */
+  
   .job-summary section {
     flex-flow: row;
   }
 
- /* Remove Job Summary Header Titles Bottom Spacing for Desktop View */
-  .job-summary h3 {
+  /* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- HEADER TITLE -- Remove Bottom Spacing for Desktop View */
+  
+ .job-summary h3 {
     margin: 0;
   }
 }
 
 @media only screen and (min-width: 500px){
 
-  /* Hide Job Summary Share Button for Desktop View */
+  /* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- HEADER TITLE -- Hide Share Button for Desktop View */
+  
   .share-btn {
     display: none;
   }
 
-  /* Hide Condensed Header Tabs Navigation for Desktop View */
+  /* MAIN PAGE -- HEADER -- TABS -- Hide Condensed Header Tabs Navigation for Desktop View */
+  
   .header-tabs-condensed {
     display: none;
   }
 
-  /* Reveal Header Tabs Containers for Midsize View */
+  /* MAIN PAGE -- HEADER -- TABS -- Reveal Containers for Midsize View */
+  
   .header-tabs-container {
     display: flex;
   }
@@ -1256,29 +1249,34 @@ hr {
 
 @media only screen and (min-width: 650px) {
 
-  /* Update Footer Margins for Midsize View */
+  /* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER-- Update Margins for Midsize View */
+  
   .page-footer-container {
     margin: 0.5rem 1.8rem 2rem 1.8rem;
   }
 
-  /* Update Job Summary Margins and Widths for Midsize View */
+  /* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- Update Margins and Widths for Midsize View */
+  
   .job-summary {
     margin: 0.5rem auto 2rem auto;
     min-width: 55%;
     max-width: 80%;
   }
 
-  /* Hide Top Left Burger Nav -- which reveals left-side bar */
+  /* MAIN PAGE -- HEADER -- NAVIGATION -- NAV BUTTONS -- Hide Top Left Burger Nav -- which reveals left-side bar */
+  
   .show-side-bar {
     display: none;
   }
 
-  /* Reveal LEFT SIDE BAR */
+  /* LEFT SIDE BAR -- Reveal */
+  
   .side-bar {
     display: flex;
   }
 
-  /* Show blue arrow next to Burger Nav -- to indicate Left Side Bar is Revealed */
+  /* MAIN PAGE -- HEADER -- NAVIGATION -- NAV BUTTONS -- Show blue arrow next to Burger Nav to indicate Left Side Bar is Revealed */
+  
   .blue-arrow {
     display: block;
   }
@@ -1286,17 +1284,20 @@ hr {
 
 @media only screen and (min-width: 801px) {
   
-  /* Hide Header Tabs Containers for Full Desktop View */
+  /* MAIN PAGE -- HEADER -- TABS -- Hide Header Tabs Containers for Full Desktop View */
+  
   .header-tabs-container{
     display: none;
   }
 
-  /* Reveal Desktop Header Tabs */
+  /* MAIN PAGE -- HEADER -- TABS -- Reveal Desktop Header Tabs */
+  
   .header-tabs {
     display: flex;
   }
   
-  /* Update Job Summary Margins */
+  /* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- JOB SUMMARY -- Update Margins */
+  
   .job-summary {
     margin: 0.5rem 2rem 2rem 2rem;
   }
@@ -1304,8 +1305,9 @@ hr {
 
 @media only screen and (min-width: 1145px) {
 
-   /* Adjust Header Tabs max-width */
-   .header-tabs {
+  /* MAIN PAGE -- HEADER -- TABS -- Adjust max-width */
+   
+  .header-tabs {
     max-width: 65%;
   }
 
@@ -1315,26 +1317,31 @@ hr {
   */
 
   /* Reveal Data Graphic at Full Desktop View */
+  
   .data-graphic {
     display: flex;
   }
 
   /* Change Show More Button for Data Graphs - Checked State */
+  
   .show-more-container input:checked~.data-graphic {
     display: none;
   }
 
   /* Flip Checkmark Image */
+  
   .show-more-checkmark {
     background: #fff url(images/chevron-arrow-up.png) no-repeat 54.9% 55%/43%;
   }
 
   /* Flip Checkmark Image */
+  
   .show-more-container input:checked~.show-more-checkmark {
     background: #fff url(images/chevron-arrow-down.png) no-repeat 54.9% 55%/43%;
   }
 
   /* Move Fake HR to Bottom */
+  
   .line {
     bottom: 0;
   }
