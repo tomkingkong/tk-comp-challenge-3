@@ -116,8 +116,6 @@ h5 {
   border: 0;
 }
 
-/* LEFT SIDE BAR -- CUSTOM ICONS / HOVERS */
-
 /* LEFT SIDE BAR -- CUSTOM ICONS -- HOME */
 
 .home {background: url(images/015-house.svg) no-repeat 0.8rem 0.6rem/1rem;}
@@ -667,6 +665,14 @@ hr {
   width: 100%;
 }
 
+/** KEYFRAMES FOR GRAPH ANIMATION **/
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 300;
+  }
+}
+
 /* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- DATA GRAPHS -- BUTTONS */
 
 .data-graphic button {
@@ -787,15 +793,6 @@ hr {
 .blue {stroke: #17a0f5;}
 .purple {stroke: #b06ab0;}
 
-/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- PIE GRAPHS -- SVG ANIMATION KEYFRAMES */
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-
-
 /* TODO: Make Bar Graph Respnsive at mobile scale */
 
 /* .bar-graph-container {
@@ -870,22 +867,12 @@ hr {
   z-index: 10;
 }
 
-/* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- COLUMNS -- FILL LEVELS */
-
-.col1 {height: 10%;}
-.col2 {height: 50%;}
-.col3 {height: 60%;}
-.col4 {height: 75%;}
-.col5 {height: 40%;}
-.col6 {height: 50%;}
-.col7 {height: 30%;}
-.col8 {height: 10%;}
-.col9 {height: 75%;}
-.col10 {height: 85%;}
-.col11 {height: 60%;}
-.col12 {height: 40%;}
-.col13 {height: 30%;}
-.col14 {height: 20%;}
+.bar-svg {
+  fill: none;
+  stroke: #45b9c1;
+  stroke-width: 30;
+  animation: progress 0.75s ease-out forwards;
+}
 
 /* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- COLUMNS -- AMOUNTS */
 
