@@ -1,4 +1,4 @@
-/* CONTAINS EVERYTHING */
+/**  CONTAINS EVERYTHING **/
 
 .container {
   align-content: flex-start;
@@ -20,6 +20,8 @@ button:hover {
   filter: brightness(80%);
 }
 
+/** SHOW LEFT SIDE BAR **/
+
 /* SHOW LEFT SIDE BAR -- HOVER */
 .show-side-bar {
   background-color: transparent;
@@ -39,7 +41,7 @@ button:hover {
   display: flex;
 }
 
-/* LEFT SIDE BAR */
+/** LEFT SIDE BAR **/
 
 .side-bar {
   background-color: #364051;
@@ -69,7 +71,7 @@ button:hover {
 
 /* LEFT SIDE BAR -- Sections */
 
-.l-aside {
+.left-side-bar {
   color: #8f9aad;
   border-top: 0.2rem ridge #2f384a;
   font-size: 0.7rem;
@@ -83,14 +85,14 @@ h5 {
   margin: 0.5rem 0.8rem;
 }
 
-/*LEFT SIDE BAR -- Profile */
+/* LEFT SIDE BAR -- PROFILE*/
 
 .profile-photo {
   margin: 1rem auto;
   text-align: center;
 }
 
-/* Profile Photo */
+/* LEFT SIDE BAR -- PROFILE -- Photo */
 
 .profile-photo aside {
   background: url(images/ezgif.com-crop.jpg) no-repeat 20% 0%/140%;
@@ -99,6 +101,8 @@ h5 {
   height: 5rem;
   width: 5rem;
 }
+
+/* LEFT SIDE BAR -- PROFILE -- Button / Hover */
 
 .profile-photo button {
   margin: 0 auto;
@@ -112,89 +116,59 @@ h5 {
   border: 0;
 }
 
-/* Button Icons */
+/* LEFT SIDE BAR -- CUSTOM ICONS / HOVERS */
 
-.home {
-  background: url(images/015-house.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+/* LEFT SIDE BAR -- CUSTOM ICONS -- HOME */
 
-.home:hover {
-  background: url(images/015-house-white.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+.home {background: url(images/015-house.svg) no-repeat 0.8rem 0.6rem/1rem;}
+.home:hover {background: url(images/015-house-white.svg) no-repeat 0.8rem 0.6rem/1rem;}
 
-.jobs {
-  background: url(images/012-briefcase.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+/* LEFT SIDE BAR -- CUSTOM ICONS -- JOBS */
 
-.jobs:hover {
-  background: url(images/012-briefcase-white.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+.jobs {background: url(images/012-briefcase.svg) no-repeat 0.8rem 0.6rem/1rem;}
+.jobs:hover {background: url(images/012-briefcase-white.svg) no-repeat 0.8rem 0.6rem/1rem;}
 
-.resumes {
-  background: url(images/016-list.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+/* LEFT SIDE BAR -- CUSTOM ICONS -- RESUMES */
 
-.resumes:hover {
-  background: url(images/016-list-white.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+.resumes {background: url(images/016-list.svg) no-repeat 0.8rem 0.6rem/1rem;}
+.resumes:hover {background: url(images/016-list-white.svg) no-repeat 0.8rem 0.6rem/1rem;}
 
-.tasks {
-  background: url(images/014-task.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+/* LEFT SIDE BAR -- CUSTOM ICONS -- TASKS */
 
-.tasks:hover {
-  background: url(images/014-task-white.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+.tasks {background: url(images/014-task.svg) no-repeat 0.8rem 0.6rem/1rem;}
+.tasks:hover {background: url(images/014-task-white.svg) no-repeat 0.8rem 0.6rem/1rem;}
 
-.calendar {
-  background: url(images/006-calendar.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+/* LEFT SIDE BAR -- CUSTOM ICONS -- CALENDAR */
 
-.calendar:hover {
-  background: url(images/006-calendar-white.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+.calendar {background: url(images/006-calendar.svg) no-repeat 0.8rem 0.6rem/1rem;}
+.calendar:hover {background: url(images/006-calendar-white.svg) no-repeat 0.8rem 0.6rem/1rem;}
 
-.users {
-  background: url(images/multiple-users-silhouette.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+/* LEFT SIDE BAR -- CUSTOM ICONS -- USERS */
 
-.users:hover {
-  background: url(images/multiple-users-silhouette-white.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+.users {background: url(images/multiple-users-silhouette.svg) no-repeat 0.8rem 0.6rem/1rem;}
+.users:hover {background: url(images/multiple-users-silhouette-white.svg) no-repeat 0.8rem 0.6rem/1rem;}
 
-.locations {
-  background: url(images/025-placeholder.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+/* LEFT SIDE BAR -- CUSTOM ICONS -- LOCATIONS */
 
-.locations:hover {
-  background: url(images/025-placeholder-white.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+.locations {background: url(images/025-placeholder.svg) no-repeat 0.8rem 0.6rem/1rem;}
+.locations:hover {background: url(images/025-placeholder-white.svg) no-repeat 0.8rem 0.6rem/1rem;}
 
-.workflows {
-  background: url(images/007-shuffle.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+/* LEFT SIDE BAR -- CUSTOM ICONS -- WORKFLOWS */
 
-.workflows:hover {
-  background: url(images/007-shuffle-white.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+.workflows {background: url(images/007-shuffle.svg) no-repeat 0.8rem 0.6rem/1rem;}
+.workflows:hover {background: url(images/007-shuffle-white.svg) no-repeat 0.8rem 0.6rem/1rem;}
 
-.job-boards {
-  background: url(images/005-panel.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+/* LEFT SIDE BAR -- CUSTOM ICONS -- JOB BOARD */
 
-.job-boards:hover {
-  background: url(images/005-panel-white.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+.job-boards {background: url(images/005-panel.svg) no-repeat 0.8rem 0.6rem/1rem;}
+.job-boards:hover {background: url(images/005-panel-white.svg) no-repeat 0.8rem 0.6rem/1rem;}
 
-.social {
-  background: url(images/004-internet.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+/* LEFT SIDE BAR -- CUSTOM ICONS -- SOCIAL */
 
-.social:hover {
-  background: url(images/004-internet-white.svg) no-repeat 0.8rem 0.6rem/1rem;
-}
+.social {background: url(images/004-internet.svg) no-repeat 0.8rem 0.6rem/1rem;}
+.social:hover {background: url(images/004-internet-white.svg) no-repeat 0.8rem 0.6rem/1rem;}
 
-/* ADMIN CHECKBOX BUTTONS */
+/* LEFT SIDE BAR -- CHECKBOX CONTAINER */
 
 .check-container {
   display: block;
@@ -208,7 +182,7 @@ h5 {
   text-indent: 1.3rem;
 }
 
-/* CHECKBOX BUTTONS -- Hidden Checkbox Input */
+/* LEFT SIDE BAR -- CHECKBOX BUTTONS -- HIDDEN CHECKBOX INPUT */
 
 .check-container input {
   position: absolute;
@@ -216,7 +190,7 @@ h5 {
   cursor: pointer;
 }
 
-/* CHECKBOX BUTTONS -- Custom Checkmark */
+/* LEFT SIDE BAR -- CHECKBOX BUTTONS -- CUSTOM CHECKMARK */
 
 .checkmark {
   position: absolute;
@@ -229,14 +203,25 @@ h5 {
   content: "";
   position: absolute;
   display: none;
+  left: 0.2rem;
+  top: 0.062rem;
+  width: 0.3rem;
+  height: 0.5rem;
+  border: solid #364051;
+  border-width: 0 0.1rem 0.1rem 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-/* CHECKBOX BUTTONS -- Checkbox Colors! */
+/* LEFT SIDE BAR -- CHECKBOX BUTTONS -- CHECKBOX COLORS */
 
 .yellow {background-color: #f2e70c;}
 .blue {background-color: #29b0fa;}
 .red {background-color: #ee145e;}
 .green {background-color: #00af8b;}
+
+/* LEFT SIDE BAR -- CHECKBOX BUTTONS -- CHECKED / HOVER STATES */
 
 .check-container:hover input~.checkmark {
   filter: brightness(50%);
@@ -250,19 +235,7 @@ h5 {
   display: block;
 }
 
-.check-container .checkmark:after {
-  left: 0.2rem;
-  top: 0.062rem;
-  width: 0.3rem;
-  height: 0.5rem;
-  border: solid #364051;
-  border-width: 0 0.1rem 0.1rem 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-/* MAIN PAGE CONTENT */
+/** MAIN PAGE CONTENT **/
 
 .page {
   align-content: flex-start;
@@ -273,20 +246,20 @@ h5 {
   width: 100%;
 }
 
-/* HEADER / NAV / TITLE */
+/** MAIN PAGE -- HEADER **/
 
 .page-header {
+  align-content: flex-end;
   align-self: flex-end;
   background-color: #fff;
   display: flex;
   flex-flow: column;
-  align-content: flex-end;
-  min-height: 13rem;
   height: auto;
+  min-height: 13rem;
   width: 100%;
 }
 
-/* HEADER NAVIGATION */
+/** MAIN PAGE -- HEADER -- NAVIGATION **/
 
 .header-nav {
   align-items: flex-end;
@@ -295,14 +268,14 @@ h5 {
   width: 100%;
 }
 
-/* HEADER -- NAV BUTTONS */
+/* MAIN PAGE -- HEADER -- NAVIGATION -- BUTTONS */
 
 .header-nav button {
   border-left: 0.09rem solid rgba(137, 140, 148, 0.235);
   cursor: pointer;
   flex: 0 1;
-  min-height: 4rem;
   height: 4rem;
+  min-height: 4rem;
   min-width: 4rem;
   width: 4rem;
 }
@@ -312,7 +285,7 @@ h5 {
   background-color: #129AF9;
 }
 
-/* NAV BUTTONS -- Burger Nav Button */
+/* MAIN PAGE -- HEADER -- NAVIGATION -- NAV BUTTONS -- BURGER NAV */
 
 .side-bar-burger {
   background: url(images/026-menu-1.svg) no-repeat center/1rem;
@@ -323,15 +296,12 @@ h5 {
 .side-bar-burger:hover {
   background: url(images/026-menu-1-white.svg) no-repeat center/1rem;
 }
+
 .blue-arrow {
   display: none;
 }
-.header-nav .left-arrow {
-  height: 1.5rem;
-  width: 0.8rem;
-}
 
-/* NAV BUTTONS -- Profile Button */
+/* MAIN PAGE -- HEADER -- NAVIGATION -- NAV BUTTONS -- PROFILE */
 
 .profile-btn {
   background: url(images/018-user.svg) no-repeat center/1.2rem;
@@ -341,7 +311,7 @@ h5 {
   background: url(images/018-user-white.svg) no-repeat center/1.2rem;
 }
 
-/* NAV BUTTONS -- Calendar Button */
+/* MAIN PAGE -- HEADER -- NAVIGATION -- NAV BUTTONS -- CALENDAR */
 
 .calendar-btn {
   background: url(images/006-calendar.svg) no-repeat center/1rem;
@@ -351,7 +321,7 @@ h5 {
   background: url(images/006-calendar-white.svg) no-repeat center/1rem;
 }
 
-/* NAV BUTTONS -- Show All Button */
+/* MAIN PAGE -- HEADER -- NAVIGATION -- NAV BUTTONS -- SHOW ALL */
 
 .show-all-btn {
   background: url(images/023-menu.svg) no-repeat center/1rem;
@@ -361,7 +331,7 @@ h5 {
   background: url(images/023-menu-white.svg) no-repeat center/1rem;
 }
 
-/* NAV BUTTONS -- Search Bar */
+/* MAIN PAGE -- HEADER -- NAVIGATION -- NAV BUTTONS -- SEARCH */
 
 .search-bar {
   background: #fff url(images/search.svg) no-repeat;
@@ -380,7 +350,7 @@ label#search:hover {
   background-color: #fff;
 }
 
-/* HEADER TITLE */
+/** MAIN PAGE -- HEADER -- TITLE **/
 
 .header-title {
   display: flex;
@@ -394,12 +364,14 @@ label#search:hover {
   margin: 0.5rem 0;
 }
 
+/* MAIN PAGE -- HEADER -- TITLE -- SUBTEXT */
+
 .header-title a {
   color: #68C0F5;
   text-decoration: none;
 }
 
-/* HEADER TITLE -- NAV TOOLS */
+/* MAIN PAGE -- HEADER -- TITLE -- NAV TOOLS */
 
 .tools-nav {
   align-items: center;
@@ -408,7 +380,7 @@ label#search:hover {
   width: auto;
 }
 
-/* NAV TOOLS -- Buttons */
+/* MAIN PAGE -- HEADER -- TITLE -- NAV TOOLS -- Buttons */
 
 .tools-nav button {
   border: 0.09rem solid rgba(137, 140, 148, 0.235);
@@ -429,14 +401,14 @@ label#search:hover {
   background-color: #EBF0F5;
 }
 
-/* TOOLS NAV -- Open Button */
+/* MAIN PAGE -- HEADER -- TITLE -- NAV TOOLS -- OPEN BUTTON */
 
 .tools-nav button:first-of-type {
   align-items: center;
   color: rgb(96, 99, 105);
   display: flex;
   justify-content: space-around;
-  padding: 0.15rem 0.4rem 0 0.4rem;
+  padding: 0.1rem 0.4rem 0 0.4rem;
   width: 6rem;
 }
 
@@ -448,7 +420,7 @@ label#search:hover {
   width: 0.8rem;
 }
 
-/* MAIN CONTENT -- NAV TABS */
+/* MAIN PAGE -- HEADER -- TABS */
 
 .header-tabs {
   align-self: flex-start;
@@ -460,7 +432,7 @@ label#search:hover {
   width: 100%;
 }
 
-/* NAV TABS -- Individual Tabs */
+/* MAIN PAGE -- HEADER -- TABS -- Individual Tabs */
 
 .header-tabs li {
   border-bottom: 0.2rem solid transparent;
@@ -476,7 +448,7 @@ label#search:hover {
 }
 
 
-/* NAV TABS -- TABBED Midsize */
+/* MAIN PAGE -- HEADER -- TABS -- TABBED Midsize */
 
 .header-tabs-container {
   display: none;
@@ -515,32 +487,32 @@ label#search:hover {
 .tab-broadcast {left: 12rem; z-index: 5;}
 .tab-notifications {left: 13rem; z-index: 4;}
 
-/* HEADER TABS -- CONDENSED */
+/* MAIN PAGE -- HEADER -- TABS -- CONDENSED */
 
 .header-tabs-condensed {
-  background-color: #fff;
-  border-radius: 0.4rem 0.4rem 0 0;
-  border-top: 0.05rem solid #8f9aad;
-  border-right: 0.05rem solid #8f9aad;
-  border-left: 0.05rem solid #8f9aad;
+  background: url(images/026-menu-1.svg) no-repeat center/1rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  border-top: 0.05rem solid rgba(137, 140, 148, 0.235);
+  border-right: 0.05rem solid rgba(137, 140, 148, 0.235);
+  border-left: 0.05rem solid rgba(137, 140, 148, 0.235);
   color: #2f384a;
   cursor: pointer;
   font-size: 0.8rem;
   margin: 0 0 0 2rem;
   padding: 0.4rem 0;
   text-align: center;
-  width: 4rem;
+  width: 3rem;
   height: 2rem;
   z-index: 7;
 }
 
 .header-tabs-condensed:hover ~ .header-tabs {
   background-color: #EBF0F5;
-  border: 0.05rem solid #8f9aad;
-  color: #2F3848;
+  border: 0.05rem solid rgba(137, 140, 148, 0.235);
+  border-radius: 0.25rem;
   display: flex;
   flex-flow: column;
-  margin: 17.5rem 0 0 2rem;
+  margin: 17rem 0 0 5rem;
   padding: 1rem;
   position: absolute;
   text-align: left;
@@ -556,7 +528,7 @@ label#search:hover {
   margin: 0;
 } 
 
-/* MAIN CONTENT BODY */
+/** MAIN CONTENT BODY **/
 
 .page-body {
   align-content: flex-start;
@@ -611,7 +583,7 @@ hr {
 
 /* DATA GRAPHS */
 
-/* Graphs Container */
+/* DATA GRAPHS -- CONTAINER */
 
 .data-graphic {
   align-items: flex-end;
@@ -624,7 +596,19 @@ hr {
   width: 100%;
 }
 
-/* Individual Graph containers */
+/* DATA GRAPHS -- BUTTONS */
+
+.data-graphic button {
+  background-color: #FAF9F7;
+  border: 0.09rem solid rgba(137, 140, 148, 0.235);
+  border-radius: 2rem;
+  font-size: 0.6rem;
+  height: 1.5rem;
+  padding: 0 1rem;
+  width: auto;
+}
+
+/* DATA GRAPHS -- INDIVIDUAL CONTAINERS */
 
 .data-graphic aside {
   align-items: center; 
@@ -633,34 +617,30 @@ hr {
   margin: 1rem 0.5rem 2rem 0.5rem;
 }
 
-/* Pie Graphs */
+/* PIE GRAPHS */
+
+/* PIE GRAPHS -- CONTAINER */
 
 .pie-graph {
+  background-color: #EBF0F5;
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
   justify-content: center;
+  position: relative;
   width: 100%;
 }
 
+/* PIE GRAPHS -- BUTTON */
+
 .pie-graph-btn {
-  margin: 1rem 0 0 0;
+  margin: 1.5rem 0 0 0;
 }
 
-.pie-graph div {
-  align-items: center;
-  border-radius: 50%;
-  display: flex;
-  height: 7.8rem;
-  justify-content: center;
-  margin: 0.5rem;
-  width: 7.8rem;
-  transition: all 0.25s linear;
-}
+/* PIE GRAPHS -- DATA */
 
 .pie-graph section {
   align-items: center;
-  color: #465168da;
-  background-color: #EAF0F5;
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
@@ -670,13 +650,80 @@ hr {
   width: 7rem;
 }
 
+/* PIE GRAPHS -- DATA -- NUMBER */
+
 .pie-graph section h4 {
   margin: 0 0 0.3rem 0;
 }
 
+/* PIE GRAPHS -- DATA -- TEXT */
+
 .pie-graph section p {
   font-size: 0.8rem;
 }
+
+/* PIE GRAPHS -- CIRCLE CONTAINERS */
+
+.single-chart {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-height: 8rem;
+  min-width: 8rem;
+  width: 10rem;
+}
+
+/* PIE GRAPHS -- CIRCLE SVGs */
+
+.single-chart svg {
+  position: absolute;
+  z-index: 0;
+}
+
+.single-chart svg:hover {
+  filter: brightness(85%);
+  transition: all 0.25s;
+}
+
+/* PIE GRAPHS -- CIRCLE SVG --CONTAINERS */
+
+.circular-chart {
+  width: 10rem;
+  height: 8.4rem;
+}
+
+/* PIE GRAPHS -- SVG -- BACKGROUND CIRCLE */
+
+.circle-bg {
+  fill: none;
+  stroke: #b1b5bd4b;
+  stroke-width: 2.5;
+}
+
+/* PIE GRAPHS -- SVG -- PRIMARY CIRCLE */
+
+.circle {
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  animation: progress 0.75s ease-out forwards;
+}
+
+/* PIE GRAPHS -- SVG PRIMARY CIRCLE -- COLOR */
+
+.green {stroke: #47b9ba;}
+.blue {stroke: #17a0f5;}
+.purple {stroke: #b06ab0;}
+
+/* SVG ANIMATION KEYFRAMES */
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
 
 /* TODO: Make Bar Graph Respnsive at mobile scale */
 
@@ -692,8 +739,9 @@ hr {
   transform: rotate(-90deg);
 } */
 
+/* BAR GRAPH */
 
-/* Bar Graph */
+/* BAR GRAPH -- PARENT CONTAINER */
 
 .bar-graph {
   display: flex;
@@ -706,7 +754,13 @@ hr {
   width: 100%;
 }
 
-/* Bar Graph Columns */
+/* BAR GRAPH -- CONTAINERS */
+
+.bar-graph .bar-container {
+  position: relative;
+}
+
+/* BAR GRAPH -- COLUMNS -- BACKGROUND */
 
 .bar-graph div {
   background-color: #b9bfc43f;
@@ -725,7 +779,13 @@ hr {
   filter: brightness(85%);
 }
 
-/* Bar Graph Column Fill */
+/* Display POPUP */
+
+.bar-graph div:hover ~ .popup {
+  display: block;
+}
+
+/* BAR GRAPH -- COLUMNS -- FILL */
 
 .bar-graph section {
   background-color: #45b9c1;
@@ -739,66 +799,24 @@ hr {
   z-index: 10;
 }
 
-.bar-graph div:hover ~ .popup {
-  display: block;
-}
+/* BAR GRAPH -- COLUMNS -- FILL LEVELS */
 
-.bar-graph .bar-container {
-  position: relative;
-}
+.col1 {height: 10%;}
+.col2 {height: 50%;}
+.col3 {height: 60%;}
+.col4 {height: 75%;}
+.col5 {height: 40%;}
+.col6 {height: 50%;}
+.col7 {height: 30%;}
+.col8 {height: 10%;}
+.col9 {height: 75%;}
+.col10 {height: 85%;}
+.col11 {height: 60%;}
+.col12 {height: 40%;}
+.col13 {height: 30%;}
+.col14 {height: 20%;}
 
-/* POP UP -- Bar Columns */
-
-.popup {
-  background-color: #364051;
-  border-radius: 0.2rem;
-  bottom: 8rem;
-  color: #fff;
-  display: none;
-  height: 3rem;
-  right: -4.5rem;
-  order: 1;
-  padding: 0.5rem 0;
-  position: absolute;
-  text-align: center;
-  width: 10rem;
-  z-index: 1000 !important;
-}
-.popup .applicant-num{
-  color: #00af8b;
-}
-.popup .interview-num{
-  color: #129AF9;
-}
-
-.bottom-arrow {
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 2rem;
-  left: 4.3rem;
-  background-color: #364051;
-  transform: rotate(45deg);
-  z-index: -1;
-}
-
-/* Individual heights for popup window */
-.p1 {bottom: 2.2rem;}
-.p2 {bottom: 6.2rem;}
-.p3 {bottom: 7.2rem;}
-.p4 {bottom: 8.8rem;}
-.p5 {bottom: 5.2rem;}
-.p6 {bottom: 6.2rem;}
-.p7 {bottom: 4.2rem;}
-.p8 {bottom: 2.2rem;}
-.p9 {bottom: 8.8rem;}
-.p10 {bottom: 9.8rem;}
-.p11 {bottom: 7.2rem;}
-.p12 {bottom: 5.2rem;}
-.p13 {bottom: 4.2rem;}
-.p14 {bottom: 3.2rem;}
-
-/* Bar Graph Amounts */
+/* BAR GRAPH -- COLUMNS -- AMOUNTS */
 
 .num-vertical {
   background-color: transparent !important;
@@ -807,7 +825,7 @@ hr {
   margin: 0 !important;
 }
 
-/* Bar Graph Days */
+/* BAR GRAPH -- COLUMNS -- DAYS */
 
 .day-horizontal {
   background-color: transparent;
@@ -825,36 +843,65 @@ hr {
   margin: 0 0.635rem;
 }
 
-/* Bar Graph Levels */
+/* BAR GRAPH -- POP UP */
 
-.col1 {height: 10%;}
-.col2 {height: 50%;}
-.col3 {height: 60%;}
-.col4 {height: 75%;}
-.col5 {height: 40%;}
-.col6 {height: 50%;}
-.col7 {height: 30%;}
-.col8 {height: 10%;}
-.col9 {height: 75%;}
-.col10 {height: 85%;}
-.col11 {height: 60%;}
-.col12 {height: 40%;}
-.col13 {height: 30%;}
-.col14 {height: 20%;}
-
-/* graph buttons */
-
-.data-graphic button {
-  background-color: #FAF9F7;
-  border: 0.09rem solid rgba(137, 140, 148, 0.235);
-  border-radius: 2rem;
-  font-size: 0.6rem;
-  height: 1.5rem;
-  padding: 0 1rem;
-  width: auto;
+.popup {
+  background-color: #364051;
+  border-radius: 0.2rem;
+  bottom: 8rem;
+  color: #fff;
+  display: none;
+  height: 3rem;
+  right: -4.5rem;
+  order: 1;
+  padding: 0.5rem 0;
+  position: absolute;
+  text-align: center;
+  width: 10rem;
+  z-index: 1000 !important;
 }
 
-/* BOTTOM HALF OF PAGE */
+/* BAR GRAPH -- POP UP -- NUMBERS */
+
+.popup .applicant-num{
+  color: #00af8b;
+}
+
+.popup .interview-num{
+  color: #129AF9;
+}
+
+/* BAR GRAPH -- POP UP -- ARROW DIV */
+
+.bottom-arrow {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 2rem;
+  left: 4.3rem;
+  background-color: #364051;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+/* BAR GRAPH -- POP UP -- INDIVIDUAL DISPLAY HEIGHTS */
+
+.p1 {bottom: 2.2rem;}
+.p2 {bottom: 6.2rem;}
+.p3 {bottom: 7.2rem;}
+.p4 {bottom: 8.8rem;}
+.p5 {bottom: 5.2rem;}
+.p6 {bottom: 6.2rem;}
+.p7 {bottom: 4.2rem;}
+.p8 {bottom: 2.2rem;}
+.p9 {bottom: 8.8rem;}
+.p10 {bottom: 9.8rem;}
+.p11 {bottom: 7.2rem;}
+.p12 {bottom: 5.2rem;}
+.p13 {bottom: 4.2rem;}
+.p14 {bottom: 3.2rem;}
+
+/* BOTTOM HALF OF PAGE -- JOB SUMMARY -- FOOTER */
 
 .bottom-half-page {
   display: flex;
@@ -865,7 +912,9 @@ hr {
   width: 100%;
 }
 
-/* !ARTICLE INFORMATION! */
+/* JOB SUMMARY */
+
+/* JOB SUMMARY --  CONTAINER */
 
 .job-summary {
   background-color: #FAF9F7;
@@ -880,7 +929,7 @@ hr {
   width: 100%;
 }
 
-/* Job Description background */
+/* JOB SUMMARY -- DESCRIPTION BACKGROUND */
 
 .job-summary div {
   background-color: #64738A;
@@ -892,7 +941,7 @@ hr {
   z-index: 0;
 }
 
-/* Job Key/Values */
+/* JOB SUMMARY -- SECTIONS */
 
 .job-summary section {
   align-items: flex-start;
@@ -903,13 +952,14 @@ hr {
   width: 100%;
 }
 
-/* job headers */
+/* JOB SUMMARY -- TITLES */
 
 .job-summary h3 {
+  margin: 0 0 0.4rem 0;
   min-width: 9rem;
 }
 
-/* job info */
+/* JOB SUMMARY -- INFO TEXT */
 
 .job-summary p {
   font-size: 0.8rem;
@@ -917,17 +967,21 @@ hr {
   overflow-y: scroll;
 }
 
-/* job description header */
+/* JOB SUMMARY -- DESCRIPTION HEADER */
+
 .sum-header {
   flex-flow: row !important;
 }
+
+/* JOB SUMMARY -- DESCRIPTION HEADER TITLE */
+
 .sum-header h3 {
   color: #fff;
   margin: 0.4rem 0;
   z-index: 1;
 }
 
-/* JOB EDIT BUTTON */
+/* JOB SUMMARY -- DESCRIPTION HEADER -- EDIT BUTTON */
 
 .sum-header .edit-btn {
   background: #7c8ca6 url(images/017-feather-and-ink-bottle-white.svg) no-repeat 13% 40%/20%;
@@ -941,7 +995,8 @@ hr {
   z-index: 2;
 }
 
-/* SHARE BUTTON */
+/* JOB SUMMARY -- DESCRIPTION HEADER -- SHARE BUTTON */
+
 .share-btn {
   background: #7c8ca6 url(images/024-share-white.svg) no-repeat center/1.2rem;
   border-radius: 0.2rem;
@@ -953,7 +1008,8 @@ hr {
   width: 2.3rem;
   z-index: 2;
 }
-/* HIRING LEAD PICTURE */
+
+/* JOB SUMMARY -- HIRING LEAD PICTURE */
 
 .sum-hiring-lead aside {
   background: url(images/ezgif.com-crop.jpg) no-repeat 20% 0%/140%;
@@ -964,6 +1020,8 @@ hr {
 }
 
 /* FOOTER */
+
+/* FOOTER -- CONTAINER */
 
 .page-footer-container {
   display: flex;
@@ -977,11 +1035,59 @@ hr {
   width: 100%;
 }
 
+/* FOOTER -- CONTAINERS */
+
+.page-footer-container aside {
+  border-bottom: 0.09rem solid rgba(137, 140, 148, 0.235);
+  max-width: 20rem;
+  min-width: 18rem;
+  padding: 1.4rem 0.5rem;
+}
+
+/* FOOTER -- ICONS */
+
+.footer-aside img {
+  width: 0.9rem;
+}
+
+/* FOOTER -- BODY TEXT */
+
+.footer-aside p {
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+/* FOOTER -- INPUTS */
+
+.footer-aside input {
+  border: 0;
+  font-size: 0.8rem;
+  height: 2rem;
+  text-indent: 0.4rem;
+  width: 80%;
+}
+
+/* Custom Input For Resume */
+
+.upload-resume input {
+  width: 100%;
+}
+
+/* FOOTER -- BUTTONS */
+
+.footer-aside button {
+  background-color: #3db4be;
+  height: 2rem;
+  width: 20%;
+}
+
+/* FOOTER -- BUTTON - TEXT COLOR */
+
 .page-footer-container button {
   color: #fff;
 }
 
-/* MEDIA BUTTONS */
+/* FOOTER -- MEDIA BUTTONS -- CONTAINER */
 
 .media-btns {
   display: flex;
@@ -994,68 +1100,30 @@ hr {
   min-width: 20rem;
 }
 
+/* FOOTER -- MEDIA BUTTONS -- BUTTONS */
+
 .media-btns button {
   border-radius: 0.1rem;
   height: 2.8rem;
   width: 100%;
 }
 
-/* Facebook */
+/* FOOTER -- MEDIA BUTTONS -- FACEBOOK */
 
 .facebook {
   background: #475993 url(images/facebook-logo.svg) no-repeat 0.8rem 1rem/1rem;
 }
 
-/* Twitter */
+/* FOOTER -- MEDIA BUTTONS -- TWITTER */
 
 .twitter {
   background: #49A9E9 url(images/013-twitter.svg) no-repeat 0.8rem 1rem/1rem;
 }
 
-/* LinkedIn */
+/* FOOTER -- MEDIA BUTTONS -- LINKEDIN */
 
 .linkedin {
   background: #3680B7 url(images/010-linkedin.svg) no-repeat 0.8rem 1rem/1rem;
-}
-
-/* JOB INPUTS */
-
-.page-footer-container aside {
-  border-bottom: 0.09rem solid rgba(137, 140, 148, 0.235);
-  max-width: 20rem;
-  min-width: 18rem;
-  padding: 1.4rem 0.5rem;
-}
-
-/* icons for link to, use widget, upload resume */
-.r-aside img {
-  width: 0.9rem;
-}
-
-/* body text for link to, use widget, upload resume */
-.r-aside p {
-  font-size: 0.8rem;
-  margin: 1rem 0;
-}
-
-/* input style for link to, use widget, upload reusme */
-.r-aside input {
-  border: 0;
-  font-size: 0.8rem;
-  height: 2rem;
-  text-indent: 0.4rem;
-  width: 80%;
-}
-
-/* button style for link to, use widget, upload reusme */
-.r-aside button {
-  background-color: #3db4be;
-  height: 2rem;
-  width: 20%;
-}
-
-.upload-resume input {
-  width: 100%;
 }
 
 /** DATA-GRAPHIC DROPDOWN **/
@@ -1109,7 +1177,7 @@ hr {
   display: none;
 }
 
-/* horizontal rule */
+/* Fake Horizontal Rule */
 .line {
   border-bottom: 0.06rem solid #8f9aad;
   margin: 0.6rem auto;
@@ -1143,151 +1211,131 @@ hr {
   bottom: 0;
 }
 
-
-
-/* EXPERIMENT SVG CIRCLES */
-
-/* Contains All Pie Graphs */
-
-.flex-wrapper {
-  background-color: #EBF0F5;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  /* margin: 0; */
-  width: 100%;
-}
-
-.single-chart {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  max-height: 5rem;
-  min-width: 5rem;
-  width: 10rem;
-  /* height: 10rem; */
-}
-
-.single-chart svg {
-  position: absolute;
-  z-index: 0;
-}
-
-.circular-chart {
-  width: 8rem;
-  height: 8.4rem;
-}
-
-.circle-bg {
-  fill: none;
-  stroke: #b1b5bd4b;
-  stroke-width: 2.5;
-}
-
-.circle {
-  fill: none;
-  stroke-width: 2.5;
-  stroke-linecap: round;
-  animation: progress 0.75s ease-out forwards;
-}
-
-/* SVG Circle Color */
-
-.green {stroke: #47b9ba;}
-.blue {stroke: #17a0f5;}
-.purple {stroke: #b06ab0;}
-
-/* SVG Animation Keyframes */
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-
-
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 400px) {
+
+  /* Update Padding on Footer to avoid Collision */
   .page-footer-container aside {
     padding: 1.4rem 0;
   }
+
+  /* Update Margins on Job Summary to avoid collision */
   .job-summary {
     margin: 1rem auto;
   }
+
+  /* Convert Job Summary Sections to Rows for Desktop View */
   .job-summary section {
     flex-flow: row;
+  }
+
+ /* Remove Job Summary Header Titles Bottom Spacing for Desktop View */
+  .job-summary h3 {
+    margin: 0;
   }
 }
 
 @media only screen and (min-width: 500px){
+
+  /* Hide Job Summary Share Button for Desktop View */
   .share-btn {
     display: none;
   }
+
+  /* Hide Condensed Header Tabs Navigation for Desktop View */
   .header-tabs-condensed {
     display: none;
   }
+
+  /* Reveal Header Tabs Containers for Midsize View */
   .header-tabs-container {
     display: flex;
   }
 }
 
 @media only screen and (min-width: 650px) {
+
+  /* Update Footer Margins for Midsize View */
   .page-footer-container {
     margin: 0.5rem 1.8rem 2rem 1.8rem;
   }
+
+  /* Update Job Summary Margins and Widths for Midsize View */
   .job-summary {
     margin: 0.5rem auto 2rem auto;
     min-width: 55%;
     max-width: 80%;
   }
+
+  /* Hide Top Left Burger Nav -- which reveals left-side bar */
   .show-side-bar {
     display: none;
   }
+
+  /* Reveal LEFT SIDE BAR */
   .side-bar {
     display: flex;
   }
+
+  /* Show blue arrow next to Burger Nav -- to indicate Left Side Bar is Revealed */
   .blue-arrow {
     display: block;
   }
 }
 
 @media only screen and (min-width: 801px) {
+  
+  /* Hide Header Tabs Containers for Full Desktop View */
   .header-tabs-container{
     display: none;
   }
+
+  /* Reveal Desktop Header Tabs */
   .header-tabs {
     display: flex;
   }
+  
+  /* Update Job Summary Margins */
   .job-summary {
     margin: 0.5rem 2rem 2rem 2rem;
   }
 }
 
 @media only screen and (min-width: 1145px) {
-  .show-more-container input:checked~.data-graphic {
-    display: none;
+
+   /* Adjust Header Tabs max-width */
+   .header-tabs {
+    max-width: 65%;
   }
 
+  /* 
+    ADJUST CHECKBOX STATE FOR FULL DESKTOP VIEW
+    FLIP ARROW BUTTONS AND DISPLAY STATES
+  */
+
+  /* Reveal Data Graphic at Full Desktop View */
   .data-graphic {
     display: flex;
   }
 
+  /* Change Show More Button for Data Graphs - Checked State */
+  .show-more-container input:checked~.data-graphic {
+    display: none;
+  }
+
+  /* Flip Checkmark Image */
   .show-more-checkmark {
     background: #fff url(images/chevron-arrow-up.png) no-repeat 54.9% 55%/43%;
-  
   }
+
+  /* Flip Checkmark Image */
   .show-more-container input:checked~.show-more-checkmark {
     background: #fff url(images/chevron-arrow-down.png) no-repeat 54.9% 55%/43%;
   }
 
+  /* Move Fake HR to Bottom */
   .line {
     bottom: 0;
-  }
-  .header-tabs {
-    max-width: 65%;
   }
 }
