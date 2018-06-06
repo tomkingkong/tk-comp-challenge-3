@@ -10,16 +10,16 @@
 ### https://tomkingkong.github.io/tk-comp-challenge-3/
 ### Here are a few screenshots in various states
 ### Screenshot 1 ~1000px
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-1/master/images/Static-3-Graph-Open.png)
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-1/master/images/Static-3-Graph-Closed.png)
+![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-3-Graph-Open.png)
+![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-3-Graph-Closed.png)
 
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-1/master/images/Static-3-Large-NoHover-BarGraph.png)
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-1/master/images/Static-3-Large-Hover-BarGraph.png)
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-1/master/images/Static-3-Large-Hover-BarGraph2.png)
+![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-3-Large-NoHover-BarGraph.png)
+![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-3-Large-Hover-BarGraph.png)
+![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-3-Large-Hover-BarGraph2.png)
 
 ### Screenshot 2 ~650px
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-1/master/images/Static-3-MidSize.png)
+![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-3-MidSize.png)
 
 ### Screenshot 3 ~350px
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-1/master/images/Static-3-Mobile.png)
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-1/master/images/Static-3-Mobile-DropDown-Menu.png)
+![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-3-Mobile.png)
+![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-3-Mobile-DropDown-Menu.png)
