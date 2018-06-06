@@ -1,7 +1,7 @@
 # Static Comp Challenge Three
 ## Recreate this composition below, with your own theme
 
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/)
+![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-Comp-3-Original.png)
 
 ## Personal Theme
 #### My goal for this project was to push my CSS skills and create a functional recreation. 
