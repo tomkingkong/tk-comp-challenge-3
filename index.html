@@ -15,39 +15,39 @@
       <aside class="side-bar">
         <div class="profile-photo">
           <aside></aside>
-          <button>Thomas King</button>
+          <button aria-label="user profile">Thomas King</button>
         </div>
         <section class="left-side-bar main">
-          <h5>Main</h5>
-          <button class="home">HOME</button>
-          <button class="jobs">JOBS</button>
-          <button class="resumes">RESUMES</button>
-          <button class="tasks">TASKS</button>
-          <button class="calendar">CALENDAR</button>
+          <h5 aria-label="main navigation">Main</h5>
+          <button aria-label="home" class="home">HOME</button>
+          <button aria-label="jobs" class="jobs">JOBS</button>
+          <button aria-label="resumes" class="resumes">RESUMES</button>
+          <button aria-label="tasks" class="tasks">TASKS</button>
+          <button aria-label="calendar" class="calendar">CALENDAR</button>
         </section>
         <section class="left-side-bar admin">
-          <h5>Admin</h5>
-          <button class="users">USERS</button>
-          <button class="locations">LOCATIONS</button>
-          <button class="workflows">WORKFLOWS</button>
-          <button class="job-boards">JOB BOARDS</button>
-          <button class="social">SOCIAL</button>
+          <h5  aria-label="admin navigation">Admin</h5>
+          <button aria-label="users" class="users">USERS</button>
+          <button aria-label="locations" class="locations">LOCATIONS</button>
+          <button aria-label="workflows" class="workflows">WORKFLOWS</button>
+          <button aria-label="job boards" class="job-boards">JOB BOARDS</button>
+          <button aria-label="social" class="social">SOCIAL</button>
         </section>
         <section class="left-side-bar categories">
-          <h5>Categories</h5>
-          <label class="check-container">
+          <h5  aria-label="categories" role="category checklist">Categories</h5>
+          <label aria-label="administrative" class="check-container">
             <input type="checkbox" name="category">Administrative
             <span class="checkmark yellow"></span>
           </label>
-          <label class="check-container">
+          <label aria-label="design" class="check-container">
             <input type="checkbox" name="category">Design
             <span class="checkmark blue"></span>
           </label>
-          <label class="check-container">
+          <label aria-label="executive" class="check-container">
             <input type="checkbox" name="category">Executive
             <span class="checkmark red"></span>
           </label>
-          <label class="check-container">
+          <label aria-label="human resources" class="check-container">
             <input type="checkbox" name="category">Human Resources
             <span class="checkmark green"></span>
           </label>
@@ -55,30 +55,28 @@
       </aside>
       <div class="page">
         <header class="page-header">
-          <nav class="header-nav">
-            <button id="sidebar-nav" class="side-bar-burger"><?xml version="1.0"?>
-              <svg class="blue-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20" height="20" viewBox="-290 0 462.359 292.359" style="enable-background:new 0 0 292.359 292.359;" xml:space="preserve" class=""><g><g>
-                <path d="M222.979,5.424C219.364,1.807,215.08,0,210.132,0c-4.949,0-9.233,1.807-12.848,5.424L69.378,133.331   c-3.615,3.617-5.424,7.898-5.424,12.847c0,4.949,1.809,9.233,5.424,12.847l127.906,127.907c3.614,3.617,7.898,5.428,12.848,5.428   c4.948,0,9.232-1.811,12.847-5.428c3.617-3.614,5.427-7.898,5.427-12.847V18.271C228.405,13.322,226.596,9.042,222.979,5.424z" data-original="#000000" class="active-path" fill="#129AFA"/>
-              </g></g> </svg>
+          <nav class="header-nav" role="navigation">
+            <button aria-label="toggle side bar" id="sidebar-nav" class="side-bar-burger"><?xml version="1.0"?>
+              <svg class="blue-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20" height="20" viewBox="-290 0 462.359 292.359" style="enable-background:new 0 0 292.359 292.359;" xml:space="preserve" class=""><g><g><path d="M222.979,5.424C219.364,1.807,215.08,0,210.132,0c-4.949,0-9.233,1.807-12.848,5.424L69.378,133.331   c-3.615,3.617-5.424,7.898-5.424,12.847c0,4.949,1.809,9.233,5.424,12.847l127.906,127.907c3.614,3.617,7.898,5.428,12.848,5.428   c4.948,0,9.232-1.811,12.847-5.428c3.617-3.614,5.427-7.898,5.427-12.847V18.271C228.405,13.322,226.596,9.042,222.979,5.424z" data-original="#000000" class="active-path" fill="#129AFA"/></g></g> </svg>
               </button>
-            <input class="search-bar" type="search" placeholder="Search for a job, task or resume">
-            <button id="profile" class="profile-btn"></button>
-            <button id="calendar" class="calendar-btn"></button>
-            <button id="showall" class="show-all-btn"></button>
+            <input aria-label="search bar" class="search-bar" type="search" placeholder="Search for a job, task or resume">
+            <button aria-label="profile" id="profile" class="profile-btn"></button>
+            <button aria-label="calendar" id="calendar" class="calendar-btn"></button>
+            <button aria-label="show all" id="showall" class="show-all-btn"></button>
           </nav>
-          <section class="header-title">
+          <section class="header-title" role="header">
             <div class="name-header">
               <h2>Software Developer</h2>
               <p><img aria-hidden="true" src="images/025-placeholder.svg"> San Francisco, CA  &nbsp;&middot;&nbsp;  <a href="#">Preview this post</a></p>
             </div>
-            <nav class="tools-nav">
-              <button class="open-btn"><div></div>OPEN</button>
-              <button class="bookmark-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463.273 463.273"><path d="M313.874 0H149.398c-16.28 0-29.477 13.197-29.476 29.477v422.368c0 4.532 2.679 8.637 6.827 10.461 4.148 1.824 8.983 1.025 12.324-2.038l84.84-77.788c4.369-4.006 11.076-4.006 15.446 0l84.84 77.788c3.34 3.063 8.175 3.863 12.324 2.038s6.827-5.929 6.827-10.461h.001V29.477C343.351 13.197 330.154 0 313.874 0z"/></svg></button>
-              <button class="edit-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 393.601 393.601"><path d="M323.53 258.346c-.662-.648-1.457-1.127-2.32-1.412v-17.34c0-3.314-2.688-6-6-6h-66.156c-3.314 0-6 2.686-6 6v17.34c-.865.284-1.662.764-2.324 1.413-26.037 25.496-42.354 71.897-43.654 124.125-.039 1.617.574 3.181 1.703 4.338 1.129 1.158 2.679 1.812 4.295 1.812h158.119c1.617 0 3.166-.653 4.296-1.812 1.129-1.157 1.741-2.722 1.702-4.338-1.299-52.232-17.62-98.633-43.661-124.126zM242.726 2.401C241.13.852 239.026 0 236.804 0c-.816 0-1.629.118-2.412.35-27.947 8.274-55.127 21.821-78.604 39.176-19.158 14.163-36.469 31.014-51.453 50.087-3.49 4.442-6.854 9.011-9.967 13.53-1.795 2.477-2.117 5.744-.846 8.521.158.351.318.706.471 1.062 1.092 2.532 2.053 5.267 2.854 8.125 2.75 9.853 3.518 20.346 2.297 30.397-1.596-7.097-3.764-13.649-6.479-19.572-1.342-2.93-4.293-4.875-7.502-4.955l-.225-.003c-3.182 0-6.07 1.754-7.541 4.578-6.025 11.585-10.545 22.53-13.816 33.459-4 13.358-6.613 28.123-7.766 43.884-1.324 18.107-.521 36.425.254 54.152.104 2.371.209 4.758.309 7.16.164 3.904 2.951 7.182 6.777 7.97.564.116 1.143.175 1.717.175 3.246 0 6.254-1.893 7.672-4.844l22.014-47.166.695-1.486c1.83-3.913 3.658-7.824 5.498-11.773 12.453-26.75 26.568-57.067 43.23-85.601 11.219-19.207 24.93-40.637 42.936-57.698-10.873 21.477-20.182 43.848-29.199 65.521-.195.428-19.688 42.968-27.902 59.303l-.078.156c-5.092 10.129-10.359 20.604-15.248 30.891-17.596 37.02-97.744 151.238-87.115 167.708 5.688 8.813 77.652-103.213 77.652-103.213 5.1-2.214 9.25-4.085 13.023-5.875 25.891-12.269 45.537-26.187 60.063-42.545 8.539-9.621 16.129-20.966 24.609-36.786 5.477-10.218 10.295-20.861 14.322-31.633.885-2.369.676-4.988-.578-7.188-1.254-2.198-3.4-3.713-5.894-4.157-7.172-1.279-14.143-3.565-20.578-6.723 6.904.775 13.588.896 19.861.359 2.908-.249 5.764-.643 8.492-1.17 3.195-.618 5.789-3.051 6.611-6.2.157-.605.312-1.213.465-1.811.6-2.36 1.168-4.837 1.729-7.275l.25-1.088c3.832-16.634 6.176-39.83 8.443-62.262 2.428-24.015 4.938-48.847 9.176-64.871.785-2.962-.096-6.131-2.295-8.268z"/></svg></button>
-              <button class="trash-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 290"><path d="M265 60h-45V15c0-8.284-6.716-15-15-15H85c-8.284 0-15 6.716-15 15v45H25c-8.284 0-15 6.716-15 15s6.716 15 15 15h15v185c0 8.284 6.716 15 15 15h180c8.284 0 15-6.716 15-15V90h15c8.284 0 15-6.716 15-15s-6.716-15-15-15zM100 30h90v30h-90V30zM70 90h30v170H70V90zm60 0h30v170h-30V90zm90 170h-30V90h30v170z"/></svg></button>
+            <nav class="tools-nav" role="navigation">
+              <button aria-label="open" class="open-btn"><div></div>OPEN</button>
+              <button aria-label="bookmark" class="bookmark-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463.273 463.273"><path d="M313.874 0H149.398c-16.28 0-29.477 13.197-29.476 29.477v422.368c0 4.532 2.679 8.637 6.827 10.461 4.148 1.824 8.983 1.025 12.324-2.038l84.84-77.788c4.369-4.006 11.076-4.006 15.446 0l84.84 77.788c3.34 3.063 8.175 3.863 12.324 2.038s6.827-5.929 6.827-10.461h.001V29.477C343.351 13.197 330.154 0 313.874 0z"/></svg></button>
+              <button aria-label="edit" class="edit-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 393.601 393.601"><path d="M323.53 258.346c-.662-.648-1.457-1.127-2.32-1.412v-17.34c0-3.314-2.688-6-6-6h-66.156c-3.314 0-6 2.686-6 6v17.34c-.865.284-1.662.764-2.324 1.413-26.037 25.496-42.354 71.897-43.654 124.125-.039 1.617.574 3.181 1.703 4.338 1.129 1.158 2.679 1.812 4.295 1.812h158.119c1.617 0 3.166-.653 4.296-1.812 1.129-1.157 1.741-2.722 1.702-4.338-1.299-52.232-17.62-98.633-43.661-124.126zM242.726 2.401C241.13.852 239.026 0 236.804 0c-.816 0-1.629.118-2.412.35-27.947 8.274-55.127 21.821-78.604 39.176-19.158 14.163-36.469 31.014-51.453 50.087-3.49 4.442-6.854 9.011-9.967 13.53-1.795 2.477-2.117 5.744-.846 8.521.158.351.318.706.471 1.062 1.092 2.532 2.053 5.267 2.854 8.125 2.75 9.853 3.518 20.346 2.297 30.397-1.596-7.097-3.764-13.649-6.479-19.572-1.342-2.93-4.293-4.875-7.502-4.955l-.225-.003c-3.182 0-6.07 1.754-7.541 4.578-6.025 11.585-10.545 22.53-13.816 33.459-4 13.358-6.613 28.123-7.766 43.884-1.324 18.107-.521 36.425.254 54.152.104 2.371.209 4.758.309 7.16.164 3.904 2.951 7.182 6.777 7.97.564.116 1.143.175 1.717.175 3.246 0 6.254-1.893 7.672-4.844l22.014-47.166.695-1.486c1.83-3.913 3.658-7.824 5.498-11.773 12.453-26.75 26.568-57.067 43.23-85.601 11.219-19.207 24.93-40.637 42.936-57.698-10.873 21.477-20.182 43.848-29.199 65.521-.195.428-19.688 42.968-27.902 59.303l-.078.156c-5.092 10.129-10.359 20.604-15.248 30.891-17.596 37.02-97.744 151.238-87.115 167.708 5.688 8.813 77.652-103.213 77.652-103.213 5.1-2.214 9.25-4.085 13.023-5.875 25.891-12.269 45.537-26.187 60.063-42.545 8.539-9.621 16.129-20.966 24.609-36.786 5.477-10.218 10.295-20.861 14.322-31.633.885-2.369.676-4.988-.578-7.188-1.254-2.198-3.4-3.713-5.894-4.157-7.172-1.279-14.143-3.565-20.578-6.723 6.904.775 13.588.896 19.861.359 2.908-.249 5.764-.643 8.492-1.17 3.195-.618 5.789-3.051 6.611-6.2.157-.605.312-1.213.465-1.811.6-2.36 1.168-4.837 1.729-7.275l.25-1.088c3.832-16.634 6.176-39.83 8.443-62.262 2.428-24.015 4.938-48.847 9.176-64.871.785-2.962-.096-6.131-2.295-8.268z"/></svg></button>
+              <button aria-label="trash" class="trash-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 290"><path d="M265 60h-45V15c0-8.284-6.716-15-15-15H85c-8.284 0-15 6.716-15 15v45H25c-8.284 0-15 6.716-15 15s6.716 15 15 15h15v185c0 8.284 6.716 15 15 15h180c8.284 0 15-6.716 15-15V90h15c8.284 0 15-6.716 15-15s-6.716-15-15-15zM100 30h90v30h-90V30zM70 90h30v170H70V90zm60 0h30v170h-30V90zm90 170h-30V90h30v170z"/></svg></button>
             </nav>
           </section>
-          <container class="header-tabs-container">
+          <container class="header-tabs-container" role="info">
             <div class="tab-summary">SUMMARY</div>
             <div class="tab-applicants">APPLICANTS</div>
             <div class="tab-jobboard">JOB BOARD</div>
@@ -100,10 +98,10 @@
         </header>
         <main class="page-body">
           <div class="drop-down-graph-container">
-            <label class="show-more-container">
+            <label aria-label="toggle graph"  class="show-more-container">
               <input type="checkbox" name="category">
-              <section class="data-graphic">
-                <aside>
+              <section class="data-graphic" role="data">
+                <aside role="pie graph">
                   <div class="flex-wrapper pie-graph">
                     <aside class="pie-graph-container">
                       <div class="single-chart" >
@@ -171,15 +169,10 @@
                   </div>
                   <button class="pie-graph-btn">TOTALS - Out of 5,234 views</button>
                 </aside>
-                <aside class="bar-graph-container"> 
+                <aside class="bar-graph-container" role="bar graph"> 
                   <container class="bar-graph">
                     <div class="num-vertical">
-                      <p>500</p>
-                      <p>400</p>
-                      <p>300</p>
-                      <p>200</p>
-                      <p>100</p>
-                      <p>0</p>
+                      <p>500</p><p>400</p><p>300</p><p>200</p><p>100</p><p>0</p>
                     </div>
                     <container class="bar-container"><div><svg width="15" height="100"><path class="bar-svg" stroke-dasharray="19, 100" d="M0 100 V -100"/></svg></div><container class="popup p1"><p>Sunday, May 6<br/><br/><span class="applicant-num">32</span> Applicants /<span class="interview-num"> 4</span> Interviewers</p><p class="bottom-arrow"></p></container></container>
                     <container class="bar-container"><div><svg width="15" height="100"><path class="bar-svg" stroke-dasharray="82, 100" d="M0 100 V -100"/></div><container class="popup p2"><p>Monday, May 7<br/><br/><span class="applicant-num">282</span> Applicants /<span class="interview-num"> 34</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
@@ -197,22 +190,9 @@
                     <container class="bar-container"><div><svg width="15" height="300"><path class="bar-svg" stroke-dasharray="75, 300" d="M0 200 V -300"/></div><container class="popup p14"><p>Saturday, May 19<br/><br/><span class="applicant-num">77</span> Applicants /<span class="interview-num"> 9</span> Interviewers<p class="bottom-arrow"></p></p></container></container>
                   </container>
                   <div class="day-horizontal">
-                    <p>S</p>
-                    <p>M</p>
-                    <p>T</p>
-                    <p>W</p>
-                    <p>T</p>
-                    <p>F</p>
-                    <p>S</p>
-                    <p>S</p>
-                    <p>M</p>
-                    <p>T</p>
-                    <p>W</p>
-                    <p>T</p>
-                    <p>F</p>
-                    <p>S</p>
+                    <p>S</p><p>M</p><p>T</p><p>W</p><p>T</p><p>F</p><p>S</p><p>S</p><p>M</p><p>T</p><p>W</p><p>T</p><p>F</p><p>S</p>
                   </div>
-                  <button>APLICANTS/DAY</button>
+                  <button aria-label="applicants">APLICANTS/DAY</button>
                 </aside>
               </section> 
               <span class="show-more-checkmark"></span>
@@ -220,7 +200,7 @@
             </label>
           </div>
           <div class="bottom-half-page">
-            <article class="job-summary">
+            <article class="job-summary" role="job summary"  aria-label="job summary" >
               <div></div>
               <section class="sum-header"><h3>JOB DESCRIPTION</h3><button class="edit-btn" aria-label="edit"> EDIT</button><button class="share-btn"></button></section>
               <section class="sum-title"><h3>POSITION TITLE</h3><p>Software Developer</p></section>

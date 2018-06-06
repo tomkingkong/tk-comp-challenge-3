@@ -848,23 +848,11 @@ hr {
 
 /* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- COLUMNS -- FILL */
 
-.bar-graph section {
-  background-color: #45b9c1;
-  border-radius: 0.1rem;
-  cursor: pointer;
-  margin: 0 auto;
-  order: 0;
-  padding: 0;
-  position: relative;
-  width: 100%;
-  z-index: 10;
-}
-
 .bar-svg {
+  animation: progress 0.75s ease-out forwards;
   fill: none;
   stroke: #45b9c1;
   stroke-width: 30;
-  animation: progress 0.75s ease-out forwards;
 }
 
 /* MAIN CONTENT BODY -- TOGGLE DATA GRAPH -- BAR GRAPH -- COLUMNS -- AMOUNTS */
@@ -972,7 +960,7 @@ hr {
   box-shadow: 0 2px 3px rgb(208, 213, 218);
   border-radius: 0.2rem;
   flex: 1;
-  max-height: 50rem;
+  max-height: 51rem;
   min-width: 50%;
   order: 2;
   padding: 0 2rem 2rem 2rem;
@@ -1075,14 +1063,17 @@ hr {
 /* MAIN CONTENT BODY -- BOTTOM HALF OF PAGE -- FOOTER -- CONTAINER */
 
 .page-footer-container {
+  align-content: flex-start;
+  align-items: flex-end;
   display: flex;
   flex-flow: row wrap;
-  flex: 0.5 1;
+  flex: 0.8 1;
   height: auto;
   justify-content: center;
-  margin: 0.5rem auto 2rem auto;
-  padding: 0 0.5rem;
+  margin: 0.5rem 0 2rem 0;
   order: 3;
+  padding: 0 0.5rem;
+  transition: all 0.25s linear;
   width: 100%;
 }
 
@@ -1092,6 +1083,7 @@ hr {
   border-bottom: 0.09rem solid rgba(137, 140, 148, 0.235);
   max-width: 20rem;
   min-width: 18rem;
+  margin: 0 2rem;
   padding: 1.4rem 0.5rem;
 }
 
@@ -1146,7 +1138,6 @@ hr {
   font-size: 0.8rem;
   justify-content: space-between;
   height: 11rem;
-  margin: 0 auto;
   max-width: 20rem;
   min-width: 20rem;
 }
@@ -1300,6 +1291,10 @@ hr {
 }
 
 @media only screen and (min-width: 1145px) {
+
+  .job-summary {
+    max-width: 50rem;
+  }
 
   /* MAIN PAGE -- HEADER -- TABS -- Adjust max-width */
    
