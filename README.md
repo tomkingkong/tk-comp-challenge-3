@@ -1,6 +1,7 @@
 # Static Comp Challenge Three
 ## Recreate this composition below, with your own theme
 
+#### Orginal Composition
 ![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-Comp-3-Original.png)
 
 ## Personal Theme
