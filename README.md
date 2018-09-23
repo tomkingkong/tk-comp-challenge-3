@@ -1,4 +1,6 @@
 # Static Comp Challenge Three
+<strong>Links to previous static comps:</strong> [Static Comp 1](https://github.com/tomkingkong/tk-comp-challenge-1/), [Static Comp 2](https://github.com/tomkingkong/tk-comp-challenge-2/)
+
 ## Recreate this composition below, with your own theme
 
 #### My Composition
@@ -14,16 +16,13 @@
 ### Here are a few screenshots in various states
 ### ~1000px
 #### Collapsable Graphs
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-3-Graph-Open.png)
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-3-Graph-Closed.png)
+![big screen](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/gifs/static-three-big.gif)
 
 #### Hoverable Bar Graph
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-3-Large-Hover-BarGraph.png)
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-3-Large-Hover-BarGraph2.png)
+![bar graph](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/gifs/static-three-svg-fun.gif)
 
 ### ~650px
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-3-MidSize.png)
+![big screen](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/gifs/static-three-medium.gif)
 
 ### ~350px
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-3-Mobile.png)
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/Static-3-Mobile-DropDown-Menu.png)
+![big screen](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/gifs/static-three-smallest.gif)
