@@ -11,18 +11,18 @@
 ## Personal Theme
 #### My goal for this project was to push my CSS skills and create a functional recreation. 
 #### This included a collapsable container for the graphs, as well as popup windows over the bar graph.
+### This project was created using only pure CSS
 
 ### https://tomkingkong.github.io/tk-comp-challenge-3/
-### Here are a few screenshots in various states
-### ~1000px
-#### Collapsable Graphs
+
+### Collapsable Graphs
 ![big screen](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/gifs/static-three-big.gif)
 
-#### Hoverable Bar Graph
+### Hoverable Bar Graph
 ![bar graph](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/gifs/static-three-svg-fun.gif)
 
-### ~650px
+
 ![big screen](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/gifs/static-three-medium.gif)
 
-### ~350px
+
 ![big screen](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/gifs/static-three-smallest.gif)
