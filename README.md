@@ -12,7 +12,7 @@
 #### This included a collapsable container for the graphs, as well as popup windows over the bar graph.
 ### This project was created using only pure CSS
 
-### https://tomkingkong.github.io/tk-comp-challenge-3/
+### [Demo](https://tomkingkong.github.io/tk-comp-challenge-3/)
 
 ### Collapsable Graphs
 ![big screen](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-3/master/images/gifs/static-three-big.gif)
